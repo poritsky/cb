@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Screenwwriting | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/screenwwriting/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Screenplay on a Galaxy Note]]></title>
+    <link href="http://www.candlerblog.com/2012/02/28/galaxy-note-screenplay/"/>
+    <updated>2012-02-28T10:37:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/02/28/galaxy-note-screenplay</id>
+    <content type="html"><![CDATA[<p>One thing I noticed during Sunday’s Oscars (which <a href="http://www.candlerblog.com/2012/02/27/oscars-2012/">I rather liked</a>) was the abundance of movie-themed commercials ABC aired. Either I recognize this every year and simply forget to remember or they aired them in stronger numbers this year. It’s an entertaining little thing, making commercials geared toward movie-lovers.</p>
+
+<p>I noticed a <a href="http://www.youtube.com/watch?v=aN9LCARJyfw">new commercial</a> for the Samsung Galaxy Note, the company’s 5.3 inch, er, crossover phone/tablet.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> It comes complete with a stylus, a marquis feature in Samsung’s book. Speaking as someone who mastered <a href="http://en.wikipedia.org/wiki/Graffiti_(Palm_OS)">Graffiti</a> on a Palm Pilot, it is my general experience that styli suck. They get lost, they’re imprecise and , more often than not, they give your hand cramps in the space of a minute or two.</p>
+
+<p>Still, you’ve got to give it to Samsung for marketing their flagship 5.3 inch thingy-of-the-month as <em>the</em> device for the stylus crowd. They even gave the device a name that reflects a very paper and pen mentality: Note. This new ad pushes interesting uses for the stylus, including drawing messages over photos and adjusting a bar-graph.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p>
+
+<p>The first thing they show anyone using the stylus for, though, is marking up a screenplay. Here’s the still from about 22 seconds in:</p>
+
+<p><img class="center" src="/images/2012/02/galaxy-note-script.jpg" title="Samsung Galaxy Note Screenplay" ></p>
+
+<p>The file is called “script.pdf” and we watch as our writer (or, more likely, reader) goes and highlights a character’s name in pink. This is the most compelling argument Samsung makes for a stylus. Stu Maschwitz <a href="http://prolost.com/blog/2012/2/10/what-i-do-with-my-ipad-part-3-read-screenplays.html">recently laid out</a> the biggest challenge to reading scripts on a tablet:</p>
+
+<blockquote>
+  <p>No one reads a printed screenplay without a pen in hand. So a tablet that allows “reading” a PDF isn’t enough to replace a hardcopy for the work of reading a screenplay. We need digital dog-ears.</p>
+</blockquote>
+
+<p>Kudos to Samsung for presenting a real-world problem and solution in their commercial. The other use-case scenarios they present don’t make much sense.<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> I have about a million questions to go along with the brief demo though, like how has the page been cropped, how do you turn pages, how do you change the highlight color of the stylus or make it into a pencil for annotation and does the apparently fine level of handwriting that appears on the screen happen at this zoom level or is it impossible to achieve that on the device in real-life?</p>
+
+<p>I owned a <a href="http://www.tenonedesign.com/products.php">Pogo stylus</a> for a hot minute some time ago but found it to be a mostly useless addition to my iPad. A lot has changed since then (most apps now correct for your wrist touching the screen). The landscape of capacitive styli has grown with entrants like Studio Neat’s <a href="http://www.studioneat.com/products/cosmonaut">Cosmonaut</a> and Wacom’s <a href="http://www.wacom.com/en/Products/Bamboo/BambooStylus.aspx">Bamboo Stylus</a>; maybe I should reconsider my stance on whether or not they fit into my workflow.</p>
+
+<p>Regardless, I’m curious what app is featured in the Galaxy Note commercial and what users are saying about it. If anyone knows, please share in the comments.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>It may have aired earlier, I don’t really know.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Okay, I use the term “interesting” lightly here.<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>When has anyone ever grabbed one section of a bar graph and moved it around?<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+</feed>

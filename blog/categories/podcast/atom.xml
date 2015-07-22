@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: podcast | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/podcast/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Backlot Episode 11: Redesigning]]></title>
+    <link href="http://www.candlerblog.com/2012/09/07/backlot-episode-11/"/>
+    <updated>2012-09-07T13:22:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/09/07/backlot-episode-11</id>
+    <content type="html"><![CDATA[<p>On this week’s episode, Ryan and I talk about redesigning sites and picking fonts while I enjoy a fine Oregon beer. It’s a pretty darn good episode. Go <a href="http://hyperbolic.tv/podcasts/backlot/episode-11/">listen to it</a> or <a href="http://itunes.apple.com/us/podcast/hyperbolic-labs-backlot/id532946223">subscribe in iTunes</a>, please.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

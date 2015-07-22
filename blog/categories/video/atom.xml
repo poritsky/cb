@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Video | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/video/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Macs and Video Pros]]></title>
+    <link href="http://www.candlerblog.com/2012/01/16/macs-and-video-pros/"/>
+    <updated>2012-01-16T10:13:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/01/16/macs-and-video-pros</id>
+    <content type="html"><![CDATA[<p>Today Marco Arment linked <a href="http://arstechnica.com/apple/news/2012/01/video-pros-apple-needs-to-acknowledge-the-pro-industry-and-fast.ars">this Ars Technica article</a> about video pros moving away from Apple products. He supplemented it with a <a href="http://www.marco.org/2012/01/16/why-the-video-pros-are-moving-away-from-apple">few comments</a> on the release cycle of the Mac Pro. I’d like to add my own commentary.</p>
+
+<p><blockquote><p>“Many folks in the industry have the perspective that Apple is willing to cut out the legs from under professionals without warning. And that can make project leads weary of putting full faith into a entire workflow, which goes well beyond the actual editing software,” Poirier told Ars. “The simple question of the survival of the features a Mac Pro provides can push workflow managers to migrate over to Windows, where Avid and Adobe can be installed. Professionals must be able count on lasting support for a few years at a time. If there are any doubts, about where the roadmap leads, it’s simply not worth the risk of taking that leap of faith. Post-production houses simply can’t afford to be caught off guard.”</p><footer><strong>-Jacqui Cheng</strong> <cite><a href='http://arstechnica.com/apple/news/2012/01/video-pros-apple-needs-to-acknowledge-the-pro-industry-and-fast.ars'>Why the Video Pros Are Moving Away From Apple</a></cite></footer></blockquote></p>
+
+<p>Windows. Where Avid and Adobe can be installed. You know where else they can be installed?</p>
+
+<p>Pound for pound, the Mac Pro is the better production box for the money regardless of which editing software you use. It’s fast, reliable and yes, “supported.” This talk of the Mac Pro being discontinued, as Marco points out, is nonsense. We’ve been hearing this same chatter for a decade that Apple doesn’t want to be in the computer business anymore, but it never turns into anything but rumor-mongering and/or link bait.</p>
+
+<p>How do I know that Apple isn’t dropping this community? <em>Because they released Final Cut Pro X.</em> Would everyone have been happier if they just let Final Cut wither on the vine in 32-bit land?</p>
+
+<p>I usually love Ars but this article is just a bunch of worry-warts bitching and moaning about Apple’s secrecy. Fair enough; they can switch to Avid or whatever. But for my money, I’d rather run any video editing software on a Mac.</p>
+]]></content>
+  </entry>
+  
+</feed>

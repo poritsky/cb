@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>OmniFocus and External Lists (plus PlainTasksOF) - the candler blog</title>
+  <meta name="author" content="Jonathan Poritsky">
+
+  
+  <meta name="description" content="I’m perpetually changing the way I use OmniFocus. The only thing I’ve used it consistently for since purchasing it in 2009 is as a grocery list. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.candlerblog.com/2012/09/19/external-lists-with-omnifocus/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feedpress.me/candlerblog" rel="alternate" title="the candler blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<script type="text/javascript" src="//use.typekit.net/agp6cdf.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/styleTweets.js"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4886664-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+  <script type="text/javascript">
+  (function(){
+    var fusion = document.createElement('script');
+    fusion.src = window.location.protocol + '//adn.fusionads.net/api/1.0/ad.js?zoneid=252&rand=' + Math.floor(Math.random()*9999999);
+    fusion.async = true;
+    (document.head || document.getElementsByTagName('head')[0]).appendChild(fusion);
+  })();</script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">the candler blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feedpress.me/candlerblog" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://next.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="candlerblog.com" />
+    <input type="hidden" name="kj" value="#D45949"/>
+    <input type="hidden" name="kf" value="-1"/>
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/projects">Projects</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="beforearticle">
+<article class="hentry" role="article">
+  
+  <header>
+    
+  
+      <h1 class="entry-title">OmniFocus and External Lists (plus PlainTasksOF)</h1>
+    
+    
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-19T14:06:00+00:00" pubdate data-updated="true">September 19<span>th</span>, 2012</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/productivity/'>Productivity</a>, <a class='category' href='/blog/categories/technology/'>Technology</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+<div class="entry-content"><p>I’m perpetually changing the way I use OmniFocus. The only thing I’ve used it consistently for since purchasing it in 2009 is as a grocery list. Otherwise, my workflow is up in the air. When I get into a groove (as I am now) though, it is the best tool to make me get off my tushy and get things done. As it turns out, I also happen to enjoy fiddling with how I use it.</p>
+
+<h3 id="allow-me-to-introduce-plaintasksof">Allow Me to Introduce PlainTasksOF</h3>
+
+<p>Enter <a href="https://github.com/aziz/PlainTasks">PlainTasks</a>, Allen Bargi’s todo plugin for Sublime Text 2 that got some attention this week from the Mac bloggerati. Similar in function to Hog Bay Software’s <a href="http://www.hogbaysoftware.com/products/taskpaper">TaskPaper</a>, PlainTasks allows users to navigate a plain text document as if it were a task list, making it simple to nest tasks in projects, move tasks up and down, mark them as completed and add tags to them. As in the case of TaskPaper, users get all the benefits of plain text, namely searchability, speed and platform agnosticity.</p>
+
+<p>Bargi describes the plugin as “opinionated,” which is an understatement. With its legal pad yellow-styling, it feels far outside my box, but there was still something appealing about the idea of a plain text task list to add to my OmniFocus workflow, so I forked the package and got to work.</p>
+
+<p>I made a new theme, tweaked the <code>.sublime-settings</code>, added new scopes to the Tasks syntax grammar and changed the way the package handles tags so that tasks can have more than one highlighted. I call it <a href="https://github.com/poritsky/PlainTasksOF">PlainTasksOF</a>, and you can go <a href="https://github.com/poritsky/PlainTasksOF">grab it over on GitHub</a>. Here’s what it looks like:</p>
+
+<p><img class="center" src="https://a248.e.akamai.net/camo.github.com/6ebc54b33566217d772e55c0b76397b947c14766/687474703a2f2f662e636c2e6c792f6974656d732f3039336832573156343530553138336b3352324c2f53637265656e25323053686f74253230323031322d30392d31382532306174253230332e32392e3237253230504d2e504e47" title="PlainTasksOF Sample" /></p>
+
+<p>I don’t want to detail its installation here, though I’ll gladly field any questions you may have if you want to <a href="http://www.candlerblog.com/contact/">shoot me an email</a>. Suffice it to say it looks and sorta-kinda works like OmniFocus.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> Why? I don’t view this kind of plain text solution as a replacement for OmniFocus. It isn’t as powerful, simple or pretty. However, I’ve always had an idea on how to use these kinds of external lists, but I wanted a solution that looks similar for comfort’s sake. PlainTasksOF is a start.</p>
+
+<h3 id="storing-repetitive-tasks">Storing Repetitive Tasks</h3>
+
+<p>There are many sorts of tasks I don’t like keeping in OmniFocus. Some I’ll put on my calendar while others end up in <a href="http://www.dueapp.com">Due</a>. Filling up OmniFocus with granular tasks can get overwhelming fast, especially if they’re the sorts of things you have to do daily. The idea here is to use OmniFocus as a means of nudging me to do a longer list of repetitive tasks.</p>
+
+<p>Clean the bathroom, for example, is a project made up of many granular tasks like scrub the shower, mop the floor, clean the inside of the toilet bowl, and so on. I don’t always need to do them all and I’d prefer not to set it up as a recurring series of tasks in OmniFocus. Instead, I could have one task for “Clean the bathroom” and link it to a PlainTasks list.</p>
+
+<p>Let me share (what I think is) a better example. I’ve always liked the sentiment behind <a href="http://forums.omnigroup.com/showthread.php?t=10626">Curt Clifton’s “Review” task lists</a>,<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> but I’ve never really tried adding them to my workflow. In short, Curt shared repetitive lists for reviewing his GTD workflow twice a day, once a week and once a month. It sounds like overkill, but the idea is to give you a basic guide to see what’s on your plate and what you’re neglecting. Here’s my modified version of Curt’s list:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">* Process Email
+</span><span class="line">* Review Today's Calendar
+</span><span class="line">* Empty OmniFocus Inbox
+</span><span class="line">* Review active projects
+</span><span class="line">    Step through Active Projects due for review today
+</span><span class="line">    * Any projects to put On Hold or move to someday/maybe? (Be draconian)
+</span><span class="line">    * Any projects that are stuck?
+</span><span class="line">        * Planning/clarity needed?
+</span><span class="line">        * True next action identified?
+</span><span class="line">        * Attach purpose, "success looks like", etc.
+</span><span class="line">* Review Next Actions Lists</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>It’s basic stuff most of us do anyway, but by writing it out it makes it a bit easier to stay on track. I don’t want to see all of this in OmniFocus, but I <em>do</em> want a task to remind me to check what I have in store in the morning. Keeping it handy as a guide would do the trick. Here’s what the above list looks like PlainTasksOF:</p>
+
+<p><img class="center" src="http://f.cl.ly/items/2Q1X2B2Y443z170T2z0A/Screen%20Shot%202012-09-19%20at%201.17.36%20PM.PNG" title="Daily Review PlainTasksOF" /></p>
+
+<p>I can tick off items as I complete them by hitting ⌘+d on the current task. When I’m done I can either close without saving (preserving the formatting for tomorrow) or restore an older version of the same list. I can link the file by dragging and dropping it into the note field of a repeating OmniFocus task where it can be double clicked and launched in Sublime Text 2.<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
+
+<p>This can be used for all sorts of lists, not just repetitive tasks. I’m working on a list (and task) for films I’d like to watch and books I’d like to read. These PlainTask lists serve as a sort of cold storage for lists I don’t want to bring into OmniFocus, at least that’s the idea.</p>
+
+<p>There are a few more tweaks that make this workflow a bit more viable<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> but I’ll end this here. I’d love to hear feedback on this sort of system and hear how others use external list apps in conjunction with OmniFocus (or Things or whatever).</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>By sorta-kinda I mean it’s sorta-kinda just as easy to add new tasks (hit <code>Return</code>) but that’s where the similarities end.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Review is GTD terminology that basically translates to “Check OmniFocus (or whatever) on a regular basis and make sure it’s still working for you.”<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>First I had to set the default application for <code>.tasks</code> filetypes to Sublime Text 2, but once that was set the icon is double clickable from within OmniFocus.<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>I’ve got a hack that involves <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> and Automator in the works to restore a clean list every day and a means of prettifying the task note so it’s not just a big ‘ol blank icon. All in due time.<a href="#fnref:4" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+  <footer>
+    <!--<p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jonathan Poritsky</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-19T14:06:00+00:00" pubdate data-updated="true">September 19<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/productivity/'>Productivity</a>, <a class='category' href='/blog/categories/technology/'>Technology</a>
+  
+</span>
+
+
+    </p>-->
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2012/09/19/vimeo-monetization/" title="Previous Post: Vimeo Tip Jar and Creator Services">&laquo; Vimeo Tip Jar and Creator Services</a>
+      
+      
+        <a class="basic-alignment right" href="/2012/09/22/iphone-5-criterion-geekiness/" title="Next Post: Criterion Wallpaper for iPhone 5">Criterion Wallpaper for iPhone 5 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+<p class=about-aside>The candler blog is a film theory and criticism (and other stuff) Web site by Jonathan Poritsky. You&#8217;re on it right now. Check out the <a href="http://feedpress.me/candlerblog">RSS</a> and <a href="https://twitter.com/thecandlerblog">Twitter</a> feeds to stay up to date. Now on App.net too: <a href='https://alpha.app.net/thecandlerblog' rel='me'><i class="icon-adn"></i></a></p>
+</section><section>
+  
+<p><form action="https://next.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="candlerblog.com" />
+    <input type="hidden" name="kj" value="#D45949"/>
+    <input type="hidden" name="kf" value="-1"/>
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form></p>
+  
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Jonathan Poritsky -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'candlerblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.candlerblog.com/2012/09/19/external-lists-with-omnifocus/';
+        var disqus_url = 'http://www.candlerblog.com/2012/09/19/external-lists-with-omnifocus/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

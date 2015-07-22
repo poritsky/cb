@@ -1,0 +1,936 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>the candler blog</title>
+  <meta name="author" content="Jonathan Poritsky">
+
+  
+  <meta name="description" content="Yesterday, after months (years, really) of deliberation, I turned off the FeedBurner feed for the candler blog and redirected it to FeedPress. If you &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.candlerblog.com/page/14/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feedpress.me/candlerblog" rel="alternate" title="the candler blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<script type="text/javascript" src="//use.typekit.net/agp6cdf.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/styleTweets.js"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4886664-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+  <script type="text/javascript">
+  (function(){
+    var fusion = document.createElement('script');
+    fusion.src = window.location.protocol + '//adn.fusionads.net/api/1.0/ad.js?zoneid=252&rand=' + Math.floor(Math.random()*9999999);
+    fusion.async = true;
+    (document.head || document.getElementsByTagName('head')[0]).appendChild(fusion);
+  })();</script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">the candler blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feedpress.me/candlerblog" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://next.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="candlerblog.com" />
+    <input type="hidden" name="kj" value="#D45949"/>
+    <input type="hidden" name="kf" value="-1"/>
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/projects">Projects</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+  
+    <h1 class="entry-title"><a href="/2013/08/13/feed-updates/">An Update on Feeds</a></h1>
+    
+      
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-13T22:49:00+00:00" pubdate data-updated="true">August 13<span>th</span>, 2013</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/announcement/'>Announcement</a>, <a class='category' href='/blog/categories/technology/'>Technology</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+
+
+  <div class="entry-content"><p>Yesterday, after months (years, really) of deliberation, I turned off the <a href="https://feedburner.google.com">FeedBurner</a> feed for <em>the candler blog</em> and redirected it to <a href="https://feedpress.it">FeedPress</a>. If you’re a subscriber to the candler blog, you shouldn’t notice any difference, but if you’re experiencing any issues you can <a href="http://feedpress.me/candlerblog">resubscribe with this link</a>.</p>
+
+<p>FeedPress offers a few advantages over FeedBurner, but there are two main reasons I’ve been wanting to make the switch:</p>
+
+<ol>
+  <li>FeedBurner is <a href="https://en.wikipedia.org/wiki/Abandonware">abandonware</a>. It’s no longer a question of if Google will kill it, but when.</li>
+  <li>Google creeps me out. The more data I can take off of their servers the better. (I’ve got a long way to go still, but every little bit counts.)</li>
+</ol>
+
+<p>And so I took the plunge yesterday. FeedPress’s best feature is that, unlike FeedBurner, it isn’t intended as a replacement for your RSS feed, but rather as a sort of proxy that enhances a given feed. If I understand correctly (and I probably don’t) the feed I host here on my server redirects to FeedPress, which in turn redirects <em>back</em> to my original feed. In other words: my feed is my feed. Always.</p>
+
+<p>In that same vein, FeedPress recently introduced <a href="https://www.dropbox.com">Dropbox</a> integration. Once a day, a .txt document with the day’s subscription numbers gets dropped into a folder in my Dropbox account. I love that in order to check the numbers, I don’t even need to log into FeedPress; they just plop a report onto my hard drive.</p>
+
+<p>If RSS isn’t your thing, then you can subscribe to the <a href="https://twitter.com/thecandlerblog">Twitter</a> and <a href="https://alpha.app.net/thecandlerblog">App.net</a> accounts of <em>the candler blog</em>. These feeds will only provide links and headlines. Posts are sent to Twitter via <a href="https://ifttt.com">IFTTT</a> and to App.net via <a href="https://adn-pourover.appspot.com">PourOver</a>. Both of those accounts use links from a custom RSS feed generated through <a href="http://pipes.yahoo.com">Yahoo! Pipes</a> which I <a href="http://www.candlerblog.com/2012/08/31/static-link-posts-to-tweets/">wrote about</a> in detail last year, though I had to tweak a few settings after switching to FeedPress.</p>
+
+<p>I welcome any <a href="http://www.candlerblog.com/contact/">feedback</a> about these feeds. Here they are once more:</p>
+
+<ul>
+  <li>RSS: <a href="http://feedpress.me/candlerblog">http://feedpress.me/candlerblog</a></li>
+  <li>Twitter: <a href="https://twitter.com/thecandlerblog">@thecandlerblog</a></li>
+  <li>App.net: <a href="https://alpha.app.net/thecandlerblog">@thecandlerblog</a></li>
+</ul>
+
+<p>As ever, thanks for reading.</p>
+
+</div>
+  
+  
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+  
+    <h1 class="entry-title-link"><a href="http://www.davidbordwell.net/blog/2013/08/12/magic-this-lantern/">Magic, this Lantern</a></h1>
+    
+      
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-13T17:28:00+00:00" pubdate data-updated="true">August 13<span>th</span>, 2013</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/cinema/'>Cinema</a>, <a class='category' href='/blog/categories/link/'>Link</a>, <a class='category' href='/blog/categories/technology/'>Technology</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+
+
+  <div class="entry-content"><p>David Bordwell discusses <a href="http://lantern.mediahist.org">Lantern</a>, a new search engine for over 800,000 digital pages the <a href="http://mediahistoryproject.org">Media History Digital Library</a>, on his <a href="http://www.davidbordwell.net/blog/2013/08/12/magic-this-lantern/">Observations on film art</a> blog:</p>
+
+<blockquote>
+  <p>I hate to pull a <a href="http://www.davidbordwell.net/blog/2013/08/12/magic-this-lantern/">Grandpa Simpson</a>, but when I think of all the time and money and gasoline and air tickets I ran through over several decades to visit libraries holding a few issues of this or that journal &#8230; and then think about the hours I spent paging through them looking for certain names, terms, film titles &#8230; and then think about how I painstakingly copied what I wanted onto 3 x 5 cards (photocopy not permitted) &#8230; I think–Well, what do you <em>think</em> I think?! I think how damn lucky you (and I) are to have all this material so accessible now. For work <em>and</em> play.</p>
+</blockquote>
+
+<p>Bordwell points to some gems in the treasure trove of material now accessible online, like <a href="http://www.archive.org/stream/internationalpho13holl#page/n71/mode/2up">this 1941 piece</a> by Gregg Toland in <em>International Photographer</em><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> in which the cinematographer offers this advice:</p>
+
+<blockquote>
+  <p>One of the greatest bugbears in Hollywood today, I think, is that the greater portion of all the creative workers—writers, directors, actors, cameramen and all the rest—are making pictures for the approbation of their fellow-workers.</p>
+
+  <p>This is an unhealthy condition and leads nowhere except false values in pictures. Motion pictures should be made for the ultimate consumer, the audience. And the creative worker, should, in my opinion, make pictures for the audience and dare criticism of his fellow-workers. </p>
+</blockquote>
+
+<p>Damn lucky we are indeed.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>The opposite page features a nude lady. This is your NSFW warning.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+  
+  
+
+  <div class="entry-content"></div>
+  <footer><a rel="full-article" href="/2013/08/13/bordwell-on-lantern/">Permalink&crarr;</a></footer>
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+  
+    <h1 class="entry-title-link"><a href="http://www.nytimes.com/2013/08/12/business/media/magazine-writing-on-the-web-for-film.html">Magazine Writing on the Web, for Film</a></h1>
+    
+      
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-13T16:16:00+00:00" pubdate data-updated="true">August 13<span>th</span>, 2013</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/link/'>Link</a>, <a class='category' href='/blog/categories/movies/'>Movies</a>, <a class='category' href='/blog/categories/writing/'>Writing</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+
+
+  <div class="entry-content"><p>David Carr profiles Joshuah Bearman and Joshua Davis, two journalists with a track record of landing movie deals for their magazine long-reads whose startup <a href="http://epicmagazine.com">Epic</a> launches this week, <a href="http://www.nytimes.com/2013/08/12/business/media/magazine-writing-on-the-web-for-film.html">for the <em>New York Times</em></a>:</p>
+
+<blockquote>
+  <p>Mr. Bearman and Mr. Davis see Epic as a vehicle for writers, including themselves, that frees them from the narrow needs of a specific magazine. The writers will retain movie rights, but if they want help in setting up projects for Hollywood, Epic will function as a producer.</p>
+</blockquote>
+
+<p>They’re partnering with <a href="http://medium.com">Medium</a>. Later, Carr adds:</p>
+
+<blockquote>
+  <p>The business model, both for Medium and Epic, is a bit murky, but it would not be hard to envision a case in which Epic becomes a hothouse for a certain kind of story with cinematic elements, and a studio or a production house cuts a first-look deal for it.</p>
+</blockquote>
+
+<p>Wouldn’t it?</p>
+
+</div>
+  
+  
+
+  <div class="entry-content"></div>
+  <footer><a rel="full-article" href="/2013/08/13/epic/">Permalink&crarr;</a></footer>
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+  
+    <h1 class="entry-title-link"><a href="http://www.theatlantic.com/technology/archive/2013/08/the-nsa-is-commandeering-the-internet/278572/">The NSA Is Commandeering the Internet</a></h1>
+    
+      
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-12T18:53:00+00:00" pubdate data-updated="true">August 12<span>th</span>, 2013</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/link/'>Link</a>, <a class='category' href='/blog/categories/technology/'>Technology</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+
+
+  <div class="entry-content"><blockquote><p>Commandeering is a practice we&#8217;re used to in wartime, where commercial ships are taken for military use, or production lines are converted to military production. But now it&#8217;s happening in peacetime. Vast swaths of the Internet are being commandeered to support this surveillance state.</p><footer><strong>Bruce Schneier</strong> <cite><a href="http://www.theatlantic.com/technology/archive/2013/08/the-nsa-is-commandeering-the-internet/278572/">The Atlantic</a></cite></footer></blockquote>
+
+<p>This is the best, most succinct explanation I&rsquo;ve read yet of what&rsquo;s going on with PRISM and the NSA.</p>
+</div>
+  
+  
+
+  <div class="entry-content"></div>
+  <footer><a rel="full-article" href="/2013/08/12/commandeering/">Permalink&crarr;</a></footer>
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+  
+    <h1 class="entry-title"><a href="/2013/08/12/footnotes/">Footnotes</a></h1>
+    
+      
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-12T17:09:00+00:00" pubdate data-updated="true">August 12<span>th</span>, 2013</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/design/'>Design</a>, <a class='category' href='/blog/categories/writing/'>Writing</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+
+
+  <div class="entry-content"><p>Ann Beattie <a href="http://www.theparisreview.org/blog/2013/08/12/footnotes/">on The Paris Review blog</a>:</p>
+
+<blockquote>
+  <p>Sure, some footnotes merely offer information, telling us that a town is in the northwest of Ireland (ho-hum; bring on the GPS). But others stun with information as sharp as a bee sting: you find out the people whose romantic wedding you’ve just read about <em>divorced</em>; that everything you just read was <em>denied by authorities</em>; that someone was one of <em>nine</em> children!</p>
+</blockquote>
+
+<p>I’m a fan of using footnotes here on <em>the candler blog</em>. It’s difficult, sometimes, to think in terms of footnotes while writing. What, for example, is the difference between a footnote and a parenthetical? My writing is often littered with parenthesis that either get deleted or turned into footnotes later.</p>
+
+<p>I’d add to Beattie’s list of books with interesting footnotes Junot Diaz’s <a href="http://amzn.to/13SUW3u"><em>The Brief Wondrous Life of Oscar Wao</em></a>.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> Diaz interjects his own voice into the narrative, offering bits of Dominican history in massive, freewheeling footnotes. Taking it to the next meta level, he recently even <a href="http://poetry.rapgenius.com/Junot-diaz-the-brief-wondrous-life-of-oscar-wao-excerpt-lyrics">annotated one of these footnotes at Poetry Genius</a>, offering inline reference to the cultural and pop allusions sprinkled throughout. It may be maddening to read an entire book with this many notes upon notes, but I think as ebook technology advances<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> we could see more and more of this out in the world.</p>
+
+<p>Speaking of maddening footnotes, I can’t believe Beattie doesn’t give at least an honorable mention to <a href="http://amzn.to/17VWiKm"><em>Infinite Jest</em></a><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> which I’m <a href="http://candlerblog.com/2013/08/01/what-i-have-been-reading-lately/">currently reading</a> at a snail’s pace. Some notes are a dozen pages long. Initially I thought the hyperlinking of footnotes would make it easier to read in ebook form than in paperback, but now I’m not so sure. While the hulking mass of the David Foster Wallace’s book is physically daunting, the ability to flip back and forth, as intended, would seem easier than navigating electronically, linearly.<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
+
+<p>For better or worse, a side effect of my reading <em>Infinite Jest</em> will likely be (and as you can see, most definitely is) a preponderance of footnoting on this site. I suppose I’m in the same boat as Ann Beattie in the above linked piece, “mentally footnoting” events as they occur.<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Affiliate link. Also: welcome to my footnotes.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Footnoting in ebooks is still a surprisingly stodgy affair. Generally you’ll see a numbered superscript hyperlink that will take you to the note, which most often lives in the back of the ebook. This is a decent analogue for most books, but <em>Oscar Wao</em> is designed specifically to keep the reader from leaving the current page of the book.</p>
+
+      <p>Probably the best footnoting I’ve seen on iOS so far is in <a href="http://www.instapaper.com">Instapaper</a> and <a href="http://the-magazine.org">The Magazine</a>, both of which bring up the footnote in a popover. I’d love to see a similar system make its way into iBooks, or at least allow publishers to offer an alternative to putting notes at the end of the book.<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>See note 1.<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>Wallace, I imagine, would prefer that it be read on paper, though the novel does prefigure most modern technology rather accurately. The “point” seems to be to break up the linearity of the novel, a function that then gets imposed on the reader in ebook form. (This book will likely break my reading streak.)<a href="#fnref:4" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p>I can’t end this without including my favorite footnoting bit, from Woody Allen’s 2002 appearance at the Academy Awards:</p>
+
+      <div class="embed-video-container"><iframe src="http://www.youtube.com/embed/rpwF6fbLFw4?start=276&amp;iv_load_policy=3 "></iframe></div>
+      <p><a href="#fnref:5" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+  
+  
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+  
+    <h1 class="entry-title"><a href="/2013/08/09/instapaper-web-beta/">Instapaper Web Beta</a></h1>
+    
+      
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-09T21:24:00+00:00" pubdate data-updated="true">August 9<span>th</span>, 2013</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/design/'>Design</a>, <a class='category' href='/blog/categories/technology/'>Technology</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+
+
+  <div class="entry-content"><p><a href="http://blog.instapaper.com/post/57817543037">Today</a> the betaworks introduced a brand new Web interface for Instapaper. The old Web app worked, but never well. The new one is gorgeous, truly makes Instapaper on the Web feel like a first-class citizen again. To access it, go to <a href="http://beta.instapaper.com/">http://beta.instapaper.com/</a> and log into your account.</p>
+
+<p>I don’t know whether I’ll stick with <a href="http://bit.ly/10ExUfg">ReadKit</a><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> on the Mac for reading or not. As I said <a href="http://www.candlerblog.com/2013/05/31/readkit-2-and-rediscovering-instapaper/">back in May</a>, ReadKit has become an invaluable tool for maintaining my Instapaper backlog. Lately I’ve been firing it up to read articles in a comfortable setting on my Mac, but the new features available in a browser are appealing enough to keep me from launching it.</p>
+
+<p>The Instapaper Web beta adds <a href="http://www.fontfont.com/fonts/tisa">Tisa</a> and <a href="http://www.type-together.com/Adelle%20Sans">Adelle Sans</a> to the Web font mix, as well as a cleaner dark reading color scheme. Also, clicking on an article headline takes you to the Instapaper text view of the article, not the source link. Finally.</p>
+
+<p>Their beta servers appear to be getting hit pretty hard right now, so be patient when trying to load up your own account.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Affiliate link. I thank you in advance.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+  
+  
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+  
+    <h1 class="entry-title"><a href="/2013/08/09/dont-call-it-a-redesign/">Don&#8217;t Call it a Redesign</a></h1>
+    
+      
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-09T15:10:00+00:00" pubdate data-updated="true">August 9<span>th</span>, 2013</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/announcement/'>Announcement</a>, <a class='category' href='/blog/categories/design/'>Design</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+
+
+  <div class="entry-content"><p>If you’re a regular reader, <em>the candler blog</em> may look a bit different to you today. Here’s (roughly)<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> what it looked like yesterday:</p>
+
+<p><img src="http://f.cl.ly/items/0b0O0h2i1G2R13393d1d/Screen%20Shot%202012-09-05%20at%205.08.13%20PM.JPG" width="2012" /></p>
+
+<p>The type is now bigger, columns are better aligned, footnotes look more like footnotes and a whole bunch of little visual mistakes have been corrected.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> I wouldn’t say I redesigned the site per se. Well, maybe I would.</p>
+
+<p>For a few months I’ve been toying with the site’s design privately. I’ve broken it down and built it from the ground up a few times, but ultimately I couldn’t find a design that I wanted to commit the energy to building out. In the end I retained the design I’ve had here <a href="http://www.candlerblog.com/2012/09/05/off-schedule-redesign/">since last September</a>, which is a heavily modified version of the <a href="http://octopress.org">stock Octopress theme</a>.</p>
+
+<p>More changes will be rolling out over time, possibly some big ones. I feel more at home in this design of the site, so I’ll likely be posting more (though hopefully not <a href="http://www.candlerblog.com/2013/08/01/what-i-have-been-reading-lately/">reading less</a>) than I have been. As ever, thanks for reading.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>A few small changes have rolled out since that screenshot was taken a year ago.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>There are still plenty of design elements I know need fixing. If you spot something that looks out of place, please <a href="http://www.candlerblog.com/contact/">drop me a line</a>.<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+  
+  
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+  
+    <h1 class="entry-title"><a href="/2013/08/07/letterboxd-and-the-decentralized-queue/">Letterboxd, The Dissolve and Decentralizing the Queue</a></h1>
+    
+      
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-07T16:07:00+00:00" pubdate data-updated="true">August 7<span>th</span>, 2013</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/movies/'>Movies</a>, <a class='category' href='/blog/categories/technology/'>Technology</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+
+
+  <div class="entry-content"><p>Scott Tobias, Editor at The Dissolve, <a href="http://thedissolve.com/news/172-the-dissolve-begins-a-partnership-with-letterboxd-/">yesterday</a>:</p>
+
+<blockquote>
+  <p>Today, we’re excited to announce that Letterboxd has developed a widget for <em>The Dissolve</em> that will make it that much easier to share your ratings and opinions with fellow readers. Below the information box on every review page, you’ll find a Letterboxd widget for each film that will allow you to add your rating, look at a graph of all ratings site-wide, and see which of your friends have seen it, as well as options to add it to your Watchlist or write a review.</p>
+</blockquote>
+
+<p>Letterboxd co-founder and site “Director” Matthew Buchanan <a href="http://news.letterboxd.com/post/57539049239/partners">filled in some blanks as well</a>:</p>
+
+<blockquote>
+  <p>This is the first of what will become multiple types of embedded content from Letterboxd. It’s not available beyond The Dissolve just yet, but if you have a popular site or blog that you’d like to include this sort of content on, please <a href="http://letterboxd.com/contact/">get in touch</a>.</p>
+</blockquote>
+
+<p>Normally, this wouldn’t be newsworthy to me, but it’s notable because Letterboxd has <a href="http://news.letterboxd.com/post/21691066124/public">long been teasing</a> a public API. Clearly they’re getting close to it.</p>
+
+<p>If you don’t know, <a href="http://letterboxd.com">Letterboxd</a> is a social network for filmgoers.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> You can rate and review films, follow people with interesting tastes and make (or follow) lists of films around, say, a certain subject, actor or cinematic movement. Here’s my now outdated <a href="http://letterboxd.com/poritsky/list/complete-criterion-collection/">list of Criterion Collection titles</a>, for example.</p>
+
+<p>Letterboxd took me awhile to get into, but earlier this year <a href="http://letterboxd.com/poritsky/films/diary/">I got on board</a>. It’s nice to look at, offers a decent mobile experience<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> and treats movies the way I think about them. The site allows you to mark a film as seen, rate<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> and review it or “like” it. You can also log when you saw a film, if you’ve seen it before and add tags to that particular viewing. The one data point I’d love to see added is theater location a la <a href="https://foursquare.com">Foursquare</a>.</p>
+
+<p>What I really like about this integration with The Dissolve is that it points the way for Letterboxd as a decentralized repository of cinematic taste. While the site doesn’t actually play movies, it makes it one-click east to get to Netflix, Amazon and iTunes to view films while browsing. It allows me to rate films according to my own tastes without the consequence of training something like a tailored Netflix queue.</p>
+
+<p>By allowing movie sites to integrate directly with the service, users can fill up their Letterboxd “watchlist,” which is exactly what it sounds like, while reading a review of a film anywhere on the Web. That’s a very cool trick, one that promotes both the viewing of movies <em>and</em> the reading about them. What I like best about that is that it undercuts the quantification of film quality that sites like <a href="https://www.rottentomatoes.com">Rotten Tomatoes</a> foster.</p>
+
+<p>So sure, today it’s just a widget on one site. But Letterboxd has been slow to add new features and was even in private beta for far longer than I realized. They are making patient, deliberate choices. I have a feeling they may be on to something big.</p>
+
+<p>You can <a href="http://letterboxd.com/poritsky/">follow me on Letterboxd here</a>. Happy watching.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Also if you don’t know: <a href="http://thedissolve.com">The Dissolve</a> is a new film outlet that launched last month by <a href="http://pitchfork.com">Pitchfork Media</a>.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>The site offers a mobile Web site that works but could be much better. Part of the reason I’m clamoring for an API is so apps like <a href="http://limelightlibrary.com">Limelight</a> (which may well prefer to be its own Letterboxd but what do I care?) can talk to it.<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>On a 10 point scale out of 5 stars, allowing for the elusive half star.<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+  
+  
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+  
+    <h1 class="entry-title"><a href="/2013/08/01/what-i-have-been-reading-lately/">“Books, Jerry”</a></h1>
+    
+      
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-01T17:02:00+00:00" pubdate data-updated="true">August 1<span>st</span>, 2013</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/reading/'>Reading</a>, <a class='category' href='/blog/categories/writing/'>Writing</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+
+
+  <div class="entry-content"><p><img class="center" src="/images/2013/08/bizarro-books.jpg" title="Bizarro Jerry" /></p>
+
+<p>Back in January I decided to read a book. Call it a New Year’s resolution, maybe. I read a lot, all day every day, but chats, tweets, blog posts, articles and the like. It’s like that scene in “<a href="https://en.wikipedia.org/wiki/The_Bizarro_Jerry">The Bizarro Jerry</a>” episode of <em>Seinfeld</em> where Elaine describes her new cohort:</p>
+
+<blockquote>
+  <p>Elaine: …They read.<br />
+Jerry: I read.<br />
+Elaine: Books, Jerry.<br />
+Jerry: Oh… big deal!  </p>
+</blockquote>
+
+<p>Before January the last novel I read was <a href="http://amzn.to/142u4xy"><em>Swann’s Way</em></a>,<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> the first of seven volumes in Marcel Proust’s massive <a href="https://en.wikipedia.org/wiki/In_Search_of_Lost_Time"><em>In Search of Lost Time</em></a>.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> Shortly thereafter I devoured David Bordwell’s excellent <a href="http://www.davidbordwell.net/books/pandora.php"><em>Pandora’s Digital Box: Films, Files, and the Future of Movies</em></a><sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> in a matter of days. Those are the only two full-length books I read in 2012, and for months I didn’t read anything at all. So I wanted to kick myself back into gear this year.</p>
+
+<p>I decided to start with Stephen King’s <a href="http://amzn.to/142xKiI"><em>The Stand</em></a>. Having never read a single book by King, it seemed a decent starting point as it’s well regarded as one of his best. I very slowly started working my way through it, but it’s a tome. Months passed and I started to realize that 2013 would be as fallow a reading year as 2012. Worse: I didn’t want to move on to any other book until I conquered all 1,153 pages of <em>The Stand</em>. I was stuck.</p>
+
+<p>So I broke down and renewed my long dormant membership to <a href="http://www.audible.com">Audible</a> and downloaded the audiobook. I listened to it sitting on my porch, in the car, walking around the grocery store. In a matter of weeks I came around and finished the book and it sparked something inside of me.</p>
+
+<p>Since finishing <em>The Stand</em> in May I’ve read nine-and-a-half (more on that below) books and I’m still going. I’m writing less, yes,<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> but I’m enjoying taking in these books while I’m on what feels like a personal streak.</p>
+
+<p>I keep track of my reading on <a href="http://www.goodreads.com">Goodreads</a>, the bookish social network that was recently <a href="http://www.goodreads.com/blog/show/413-exciting-news-about-goodreads-we-re-joining-the-amazon-family">acquired by Amazon</a>. You can <a href="http://www.goodreads.com/poritsky">follow my reading exploits there</a>. When I started using Goodreads back in 2009 I considered it a novelty, fully aware that digitally tracking what page I was on in a book was at best foolish, at worst pompous. But now, four years on, I love that I can look back on what I was reading, the pace at which I read it and what I thought of it after the last page.</p>
+
+<p>A quick note on the book links below. Where possible I linked to the edition of the book I read. None of the links point to Kindle books simply because I feel paperback editions make for more reliable Amazon links; Kindle books change cover images sometimes, for example, which makes me wary about which edition is on offer at a given link. In some cases, as in the Proust and Dostevsky books mentioned here, the Kindle editions are extremely unreliable, with some public domain translations being repackaged. My point is simply this: I link only to the editions I think are worth reading.</p>
+
+<p>Without further ado, here’s what I’ve been reading this summer, with a few thoughts on each book.</p>
+
+<h3 id="my-summer-reading-list-so-far">My Summer Reading List (So Far)</h3>
+
+<p><strong><a href="http://amzn.to/142xKiI"><em>The Stand</em></a> by Stephen King</strong>: Initially I wanted to read King because I was looking for some fiction to fall into. It’s been a long time since I’ve written fiction myself and, at the time, I was looking for an inroad to explore writing it again. King is renowned for being a universe-builder, and I wanted to see how that comes together on the page.</p>
+
+<p><em>The Stand</em> is a masterpiece. It’s long and it took me half a year to finally get through it all, but at no point was I bored. In fact when it ended I felt as though I needed more. I must read more Stephen King.</p>
+
+<p><strong><a href="http://amzn.to/142zgl2"><em>The Love of the Last Tycoon</em></a> by F. Scott Fitzgerald</strong>: In the run up to the release of Baz Luhrmann’s <a href="http://letterboxd.com/poritsky/film/the-great-gatsby-2013-5/"><em>The Great Gatsby</em></a>, I was looking to re-familiarize myself with the source material. Instead, the girlfriend recommended I give Fitzgerald’s posthumous <em>The Love of the Last Tycoon</em> a try. A quick, slim read, it’s a great Hollywood yarn. Romantic and affecting, I couldn’t put it down. It’s full of great little aphorisms that still feel relevant. On Hollywood: “It’s a mining town in lotus land.” Yep.</p>
+
+<p><strong><a href="http://amzn.to/17VRXab"><em>The Eyre Affair</em></a> by Jasper Fforde</strong>: Another suggestion from the girlfriend, this is Fforde’s first Thursday Next novel, a character he has spun into two separate series. In short: this book is nonsensical by design, but there is also a certain charm to it. For about the first half of the book I railed against the alternate history Fforde has built, but eventually the pieces came together for me. The action scene that takes place in the latter half of the book, which, mind you, occurs along multiple temporal planes and at varying speeds, is unlike anything I’ve ever read. I’ll move on to the rest of the series in due time.</p>
+
+<p><strong><a href="http://amzn.to/142zRDd"><em>Everything Is Cinema: The Working Life of Jean-Luc Godard</em></a> by Richard Brody</strong>: Another tome I’d been meaning to conquer for years, I finally picked this one up. It’s not a straight biography, hence the mouthful of a title. For the first few chapters I tried to follow along and watch or re-watch the films discussed in each chapter, but I didn’t even make it to the 1970s before I realized this is an untenable (if still enjoyable) way to read a book.<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> Brody has written a definitive account of Godard’s cinema, yes, but it’s truly much more than that.</p>
+
+<p>Thanks mostly to the fact that Godard is such a central character in both French and cinematic history, this really is a book about the growth of an art form and the convulsions of a nation. Brody gives succinct yet illuminating descriptions of the founding and dismantling of the French New Wave and the events leading up to May 1968. He does this without removing his critic’s hat, which is to say he fairly discusses the work of Godard both on its face and with the benefit of his world-historical perspective.</p>
+
+<p>I am ever the more appreciative of Brody’s <a href="http://www.newyorker.com/online/blogs/movies/">The Front Row</a> blog in light of having read his book; each post on Godard (<a href="http://www.newyorker.com/online/blogs/movies/2011/06/film-socialisme-humanism-and-paranoia.html">this 2011 entry</a> on Godard’s anti-Semitism comes to mind) now seems like an addendum, though I should hope he will expand the book in later editions.</p>
+
+<p><strong><a href="http://amzn.to/17VTdtW"><em>The Inimitable Jeeves</em></a> by P.G. Wodehouse</strong>: I think it was a few years ago, after watching Stephen Fry and Hugh Laurie’s <a href="http://www.imdb.com/title/tt0101049/"><em>A Bit of Fry and Laurie</em></a> sketch-comedy show<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup> for the first time, that I got the urge to read Wodehouse. The duo went on to play the eponymous roles in the <a href="http://www.imdb.com/title/tt0098833/"><em>Jeeves and Wooster</em></a> series, based on Wodehouse’s two most famous characters. And so I read a few short stories which proved illuminating.</p>
+
+<p>It’s not simple to pin down a canonical order in which to read Wodehouse’s Jeeves and Wooster stories. Some were published in magazines, some in anthologies and still others in novel form. The novels are often re-workings of old shorts to boot. Suffice it to say, <em>The Inimitable Jeeves</em> is a fine place to start, regarded as the first complete novel. It’s simply brilliant. No one turns a phrase like Wodehouse. I really should have a slim Wodehouse volume ready to go between all other books I read.</p>
+
+<p>One more thing: another bit that pushed me to rekindle reading Wodehouse was this quote from John Ratzenberger in the <a href="http://www.gq.com/entertainment/movies-and-tv/201210/cheers-oral-history-extended?printable=true">October 2012 GQ oral history of <em>Cheers</em></a>:</p>
+
+<blockquote>
+  <p>It was the last generation of writers that had grown up reading books instead of watching TV. So you weren’t getting anything that was derivative of <em>I Love Lucy</em> or <em>Happy Days</em>. You were getting real characters [like those] they read in P.G. Wodehouse or Dickens or somewhere along the line, because they had all grown up with a love of literature.</p>
+</blockquote>
+
+<p>I’ve been re-watching <a href="http://www.imdb.com/title/tt0083399/"><em>Cheers</em></a> since reading that as well; he’s spot on. And, well, maybe that has more than a little something with my wanting to read more Wodehouse.</p>
+
+<p><strong><a href="http://amzn.to/17VULEg"><em>Vulgar Modernism: Writing On Movies And Other Media</em></a> by J. Hoberman</strong>: This is that half book I mentioned above. If we’re going to split hairs here I actually read two-thirds of it. This is a collection of Hoberman’s writings from the 1980s. I put it onto my to-read list as online conversation about <a href="http://girishshambu.blogspot.com/2013/06/vulgar-auteurism.html">Vulgar Auteurism</a> reached a fever pitch. Hoberman’s moniker has nothing to do with VA, but since the word vulgar was in the title it piqued my interest nonetheless.</p>
+
+<p>This is an excellent collection, a recommended read for any aspiring (or duly employed, for that matter) critic. A common refrain against younger, greener critics is that they only know movies (see also:Ratzenberger, above). Hoberman is a sponge for all media, and he spouts that knowledge in everything he writes. It’s not the only way to be critical, but if you can’t imagine what it’s like to write with a working knowledge of arts and media theories, read some Hoberman.<sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup></p>
+
+<p><strong><a href="http://amzn.to/17VVvck"><em>The Golden Age</em></a> by Michal Ajvaz</strong>: Credit where it’s due: this book first caught my attention when one of the booksellers at <a href="http://www.mcnallyjackson.com">McNally Jackson</a> recommended it on one of the in-store displays. Ajvaz’s novel is a reverie, a fever dream reminiscent of Italo Calvino, specifically <a href="http://amzn.to/13pQyZL"><em>If on a winter’s night a traveler</em></a>. Ajvaz twists and turns through interlocking narratives about a mysterious unmarked island and other far flung places. One of the best set-pieces involves a chase along a large fluorescent sign that anyone with even a passing interest in type design will enjoy. This was a fun one to get lost in.</p>
+
+<p><strong><a href="http://amzn.to/13pQDfZ"><em>Ready Player One</em></a> by Ernest Cline</strong>: I didn’t particularly enjoy Cline’s novel. It’s simple and painted in broad strokes, which is to say it’s really for a younger set than myself. That said, I do actually like the world he’s built in The OASIS, a futuristic gaming platform that has become more than an escape from reality, but a reality unto itself.</p>
+
+<p>It’s easy to see how we’re heading on a path toward more fully realized digital selves at the expense of our grip on reality. Cline’s future is dystopic, but he seems to think it’s the technology that will ultimately save us from ourselves, which seems unlikely given the problems The OASIS has ultimately wrought by the time the novel picks up.</p>
+
+<p><strong><a href="http://amzn.to/17VVRzP"><em>Notes from the Underground</em></a> by Fyodor Dostoevsky</strong>: I read <a href="http://amzn.to/13pQYPS"><em>Crime and Punishment</em></a> in high school. I remember about enough to know the context of the name Raskolnikov should it come up in conversation. I’d been meaning to revisit Dostoevsky, specifically to give the Richard Pevear and Larissa Volokhonsky translations a spin. I went with the slimmest volume and yet another recommendation from the girlfriend (she knows her stuff), <em>Notes from the Underground</em>. I found it to be a brilliant bit of comic work that, in fact, goes hand in hand with the Wodehouse I’d just read.</p>
+
+<p>Dostoevsky’s unnamed underground narrator reminds me of the <em>schlemiels</em> from Yiddish literature, only full of ten times as much bile. Plus, he has this to offer, which comes at a good time for me as I try to write more:</p>
+
+<blockquote>
+  <p>I’m bored, and I constantly do nothing. And writing things down really seems like work. They say work makes a man good and honest. Well, here’s a chance, at least.</p>
+</blockquote>
+
+<p><strong><a href="http://amzn.to/17VW5H3"><em>The Futurological Congress: From the Memoirs of Ijon Tichy</em></a> by Stanisław Lem</strong>: I’m quite excited for <a href="https://www.youtube.com/watch?v=QHBl43lMJY0"><em>The Congress</em></a>, Ari Folman’s first film since his Oscar-nominated animated documentary, <a href="http://www.imdb.com/title/tt1185616/"><em>Waltz with Bashir</em></a>. Starring Robin Wright and Harvey Keitel, the film played at Cannes where it seems to have landed with a thud. It has no American release date announced. Anyway, the film is based on Stanisław Lem’s <em>The Futurological Congress</em>, though the trailer makes it appear as though the film has very little to do with the book, a fact which I might bristle at for any other book I enjoyed reading. Not so for this one.</p>
+
+<p>In a word, Lem’s novel is nuts. I don’t envy Michael Kandel, who translated the book from the Polish. Almost every other word is a pun or a fictitious pharmaceutical or a futuristic machine with a wacky name and purpose. I have no clue how this sort of wordplay translates over, but I’m so, so glad it does. In Lem’s future there’s a drug for everything, even how we perceive reality (and a pill to cut through that as well). Read it. Go read it now.</p>
+
+<h3 id="onward">Onward</h3>
+
+<p>Now that I’m in a reading groove, I’ve decided to try reading David Foster Wallace’s <a href="http://amzn.to/17VWiKm"><em>Infinite Jest</em></a>. I’m 8% of the way into it (I’m reading an ebook) and I sort of don’t know what the hell is going on. A more accurate way to put it would be that I don’t know how to <em>describe</em> what’s going on, but I am rather enveloped in this wild, unpredictable universe. Whenever I get lost or frustrated there’s always the <a href="http://infinitesummer.org/forums/viewforum.php?f=12">Infinite Summer message boards</a> to get me back on track.</p>
+
+<p>I’ve been adding books to my <a href="http://www.goodreads.com/review/list/1927838?shelf=to-read">Goodreads “to-read” shelf</a> and picking from them at random. Their recommendation engine is quite good, but I’ve got enough that I already know I want to read that I should be set for a long while. If you’d like to suggest a read, I’d love to hear it in the comments, or <a href="http://candlerblog.com/contact/">drop me a line here</a> or <a href="https://twitter.com/poritsky">on Twitter</a>.</p>
+
+<p>Well, now that that’s out of my system back to writing about movies and technology. Maybe.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>All links leading to Amazon in this post are affiliate links. I’ll get a little cut of whatever you buy on Amazon from the links, which helps keep the candler blog up and running. I thank you in advance for supporting independent writing.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>That link leads to Wikipedia for simplicity’s sake, but if you’re looking to read any of <em>In Search of Lost Time</em> I recommend picking up the <a href="http://www.us.penguingroup.com/nf/Search/QuickSearchProc/1,,,00.html?strSearch=&amp;searchProfile=US-590611-global&amp;advSearchStr=author%3A%22fastpbfast+Marcel+Proust+fastpbfast%22&amp;homeNav=&amp;adv=0&amp;textSearch=&amp;retainableText=&amp;path=c590611%2D00000000%23%23%2D1%23%23%2D1%7E%7Eq617574686f723a2266617374706266617374204d617263656c2050726f757374206661737470626661737422%7E%7Enf10%7C%7C50656e6775696e20436c6173736963732044656c7578652045646974696f6e73&amp;sortBy=pubdateAsc">Penguin Classics Deluxe Editions</a>.</p>
+
+      <p>I read the <a href="http://amzn.to/142u4xy">aforelinked Lydia Davis translation</a> is part of these editions, of which only four of the seven volumes have been published in the U.S. If you’re looking for these editions, be wary of any ebooks that are free or incredulously cheap; the Davis translation is worth it.<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>I am, in fact, a blurb on the book’s product page; from <a href="http://www.candlerblog.com/2012/01/30/bordwell-on-digital-art-house/">this post</a>.<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>Oh, you’ve noticed?<a href="#fnref:4" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p>I don’t have a VCR anymore, so it would have been an incomplete viewing anyway (to say nothing of the fact that much of Godard’s work isn’t available on home video). Pro-tip: read Brody’s chapter before watching the film in question.<a href="#fnref:5" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p><a href="https://www.youtube.com/watch?v=Y7o8FbGCR9U">A taste</a>.<a href="#fnref:6" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+      <p>I stopped reading it for two reasons: a) It was due back at the library and b) I had read the more grandiose pieces in the book. All that remained were reviews which, unless I were to watch the films and mete out Hoberman’s opinion, hold much less significance for me.<a href="#fnref:7" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+  
+  
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+  
+    <h1 class="entry-title-link"><a href="http://falkvinge.net/2013/07/10/fan-subtitle-site-raided-by-copyright-industry-aided-by-police/">Movie Subtitle Site Raided by Police</a></h1>
+    
+      
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-10T14:48:00+00:00" pubdate data-updated="true">July 10<span>th</span>, 2013</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/link/'>Link</a>, <a class='category' href='/blog/categories/movies/'>Movies</a>, <a class='category' href='/blog/categories/technology/'>Technology</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+
+
+  <div class="entry-content"><p>Undertexter.se, a Swedish site that posts fan-produced subtitle files, <a href="http://falkvinge.net/2013/07/10/fan-subtitle-site-raided-by-copyright-industry-aided-by-police/">was raided on Monday</a>. In messages posted to the <a href="http://webcache.googleusercontent.com/search?hl=en&amp;q=cache%3Aundertexter.se">stripped down site</a> (Google Cached), the owners claim they have “never received complaints from businesses who have pointed out that some of the texts are taken from their DVD.”<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+
+<p>Subtitling is a tricky part of international distribution, and as such many films simply aren’t translated for most markets out there. Fan sites have long played an integral role in bringing subtitled movies abroad for free. You can use fan-created subtitles with legally purchased films; on its face there doesn’t appear to be anything illegal about distributing the texts.</p>
+
+<p>Studios should embrace fan subtitlers. They’re creating a massive collection of localized data and don’t ask for anything in return. With fan subtitles you could enhance a service like <a href="http://www.anyclip.com">AnyClip</a> by making movie scenes searchable by dialogue in any language. There are even tools like <a href="https://github.com/brazilbrown/mute-profanity">Mute Profanity</a> or <a href="https://github.com/jacobwg/hulu-filter">Hulu Filter</a> that automate the process of muting offensive words based entirely on subtitles; not something I’d promote but a neat trick nonetheless.</p>
+
+<p>All may not be lost, though. The first message posted to Undertexter after the site went down <a href="http://webcache.googleusercontent.com/search?hl=en&amp;q=cache%3Aundertexter.se">ends on this note</a>:</p>
+
+<blockquote>
+  <p>We will never give up, we live in a free country and Swedish people have every right to publish your own interpretation of a movie/series.</p>
+</blockquote>
+
+<p>Yep. Here’s hoping subtitles aren’t the MPAA’s next crusade.</p>
+
+<p>(via <a href="http://www.dailydot.com/news/movie-subtitles-copyright-violation-shutdown/">The Daily Dot</a>.)</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>All quotes from Undertexter.se translated via Google Translate.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+  
+  
+
+  <div class="entry-content"></div>
+  <footer><a rel="full-article" href="/2013/07/10/undertexter-down/">Permalink&crarr;</a></footer>
+
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/page/15/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/page/13/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+<p class=about-aside>The candler blog is a film theory and criticism (and other stuff) Web site by Jonathan Poritsky. You&#8217;re on it right now. Check out the <a href="http://feedpress.me/candlerblog">RSS</a> and <a href="https://twitter.com/thecandlerblog">Twitter</a> feeds to stay up to date. Now on App.net too: <a href='https://alpha.app.net/thecandlerblog' rel='me'><i class="icon-adn"></i></a></p>
+</section><section>
+  
+<p><form action="https://next.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="candlerblog.com" />
+    <input type="hidden" name="kj" value="#D45949"/>
+    <input type="hidden" name="kf" value="-1"/>
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form></p>
+  
+</section>
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Jonathan Poritsky -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'candlerblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

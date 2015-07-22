@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Text | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/text/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Markup as Language]]></title>
+    <link href="http://www.candlerblog.com/2012/01/13/markup-as-language/"/>
+    <updated>2012-01-13T08:32:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/01/13/markup-as-language</id>
+    <content type="html"><![CDATA[<p>I’m just now catching up with the excellent and gorgeous <a href="http://contentsmagazine.net/">Contents Magazine</a>. I love their publishing model. Each “issue” comes out over the course of a few weeks, basically a string of feature-length blog posts released on a sparing schedule. Smart.</p>
+
+<p>I highly recommend all writers take a look at Mandy Brown’s article in the inaugural issue, <a href="http://contentsmagazine.net/articles/babies-and-the-bathwater/">Babies and the Bathwater</a>. She lays out in plain English the way that the publishing landscape has changed for the better and how we, as writers, publishers, editors and readers, should be adapting.</p>
+
+<p>One of my favorite parts of Mandy’s article involves something I just dealt with when <a href="http://www.candlerblog.com/2012/01/10/more-than-a-new-design/">switching from Wordpress to Octopress</a>.</p>
+
+<p><blockquote><p>Content people are fond of leaving the code to the geeks while we debate the merits of the Oxford comma, but there is a difference between programming and markup. HTML, whose own name comes from the editor’s act of “marking up” a text, is an element of the text itself—a machine- and human-readable expression of the text’s underlying semantic structure. This is a language that we can and must speak, because it not only determines how the text <em>looks</em> but what it <em>means</em>.</p></p><p><p>Which brings us to more bathwater: WYSIWYG-style document editors that ignore the principles of semantic markup or prevent us from engaging with the text completely deserve a path down the drain. We need to adopt the mindset that markup—HTML, in particular—is part of our job, and we need to demand tools that let us do it.</p></blockquote></p>
+
+<p>I moved to a plain text workflow a while ago, but I always have trouble telling other people why I did, or why they should. The above quote pretty much says it all. Text is what I do.</p>
+
+<p>It’s not that everyone should move to plain text, but people who write in public should have some understanding about what markup is. It’s possible to be vigilant and aware of markup in a WYSIWYG editor, but odds are you won’t notice if, for example, you’ve let a space fall into a block of bolded text or if you leave a letter or two unlinked.</p>
+
+<p>Not every writer needs to learn code or Markdown or something, but at the very least they should have a passing understanding of what HTML is actually doing to their text. These are our <em>words</em>; they don’t come out of our heads by chance and we shouldn’t leave it up to the “nerds” to format it. The markup is part of our language whether we like it or not. If you haven’t yet, it’s time to learn it.</p>
+
+<p>Working my way through the rest of Contents now. Also, check out Mandy’s other site, <a href="http://aworkinglibrary.com/">A working library</a>, where she has followed the aforelinked article up with two additions: <a href="http://aworkinglibrary.com/library/archives/represent/">Represent</a> and <a href="http://aworkinglibrary.com/library/archives/markup/">Markup</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>A Simple Sublime Text to Day One Build System - the candler blog</title>
+  <meta name="author" content="Jonathan Poritsky">
+
+  
+  <meta name="description" content="I really enjoy using Day One. Like Federico Viticci at MacStories, however, I have been wondering whether or not I should be writing more of my &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.candlerblog.com/2012/12/07/sublime-to-day-one/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feedpress.me/candlerblog" rel="alternate" title="the candler blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<script type="text/javascript" src="//use.typekit.net/agp6cdf.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/styleTweets.js"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4886664-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+  <script type="text/javascript">
+  (function(){
+    var fusion = document.createElement('script');
+    fusion.src = window.location.protocol + '//adn.fusionads.net/api/1.0/ad.js?zoneid=252&rand=' + Math.floor(Math.random()*9999999);
+    fusion.async = true;
+    (document.head || document.getElementsByTagName('head')[0]).appendChild(fusion);
+  })();</script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">the candler blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feedpress.me/candlerblog" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://next.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="candlerblog.com" />
+    <input type="hidden" name="kj" value="#D45949"/>
+    <input type="hidden" name="kf" value="-1"/>
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/projects">Projects</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="beforearticle">
+<article class="hentry" role="article">
+  
+  <header>
+    
+  
+      <h1 class="entry-title">A Simple Sublime Text to Day One Build System</h1>
+    
+    
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-07T10:55:00+00:00" pubdate data-updated="true">December 7<span>th</span>, 2012</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/technology/'>Technology</a>, <a class='category' href='/blog/categories/writing/'>Writing</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+<div class="entry-content"><p><img class="center" src="/images/2012/12/sublime-day-one.jpg" title="Sublime Text to Day One" /></p>
+
+<p>I really enjoy using <a href="http://dayoneapp.com">Day One</a>. Like <a href="http://www.macstories.net/news/slogger-and-day-one-memories/">Federico Viticci at MacStories</a>, however, I have been wondering whether or not I should be writing more of my thoughts in it exclusively rather than relying on <a href="http://ttscoff.github.com/Slogger/">Slogger</a> to collect every ounce of my digital existence. Here’s how he put it:</p>
+
+<blockquote>
+  <p>I want my thoughts — not my stupid Twitter jokes — to be read by someone who, for some reason, will care about the life I had.</p>
+</blockquote>
+
+<p>And so I’ve been making a concerted effort to write in it more. It’s a pity, then, that I don’t like writing in Day One itself.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+
+<p>Day One on the Mac offers nine fonts for both reading and composing: Anonymous Pro, Avenir, Baskerville, Courier New, Futura, Helvetica Neue, Hoefler Text, Lato and Noteworthy. On that list I find only Avenir, Helvetica Neue and Lato sensible options for writing.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> I have no idea why Noteworthy made the cut and don’t get me started on Courier New, <a href="http://www.candlerblog.com/2012/09/11/which-courier/">the worst Courier</a>.</p>
+
+<p>Though the app does sport my favorite Markdown syntax highlighting (love that blue) overall it’s lacking as an editor. I find myself writing in other apps and copying the text into it.</p>
+
+<p>Lately I spend almost all of my time in <a href="http://www.sublimetext.com">Sublime Text 2</a>. I’ve tricked it out with plugins and what-not so I’m able to write faster and more comfortably. It’s even got <a href="http://candlerblog.com/2012/12/03/bufferscroll/">typewriter scrolling</a> now. And, of course, I can write with whatever font I please.</p>
+
+<p>In order to expedite the process of getting my writing from Sublime Text into Day One, I wrote this quick and dirty Sublime build system. You can check out the code <a href="https://gist.github.com/4234856">here</a>, or follow the installation instructions below.</p>
+
+<p>The long and short of this is that I <em>want</em> to write more original pieces about what is happening in my life today and store them in Day One. But I also want to use the tools I have at hand to write quickly and comfortably. This little workaround gives me the best of both worlds.</p>
+
+<h3 id="installation">Installation</h3>
+
+<ol>
+  <li>Install the <a href="http://dayoneapp.com/tools/">Day One Command Line Interface</a>.</li>
+  <li>Download and unzip <a href="http://poritsky.com/phpatm/index.php?action=downloadfile&amp;filename=Day%20One.sublime-build.zip&amp;directory=&amp;">Day One.sublime-build.zip</a>.</li>
+  <li>Move <code>Day One.sublime-build</code> to <code>~/Library/Application Support/Sublime Text 2/Packages/User/</code></li>
+  <li>Open the document you want to move to Day One in Sublime Text.</li>
+  <li>From the Tools menu choose Build System &gt; Day One.</li>
+  <li>Typing ⌘B or choosing Build from the Tools menu will send the current document to Day One as a new post.</li>
+</ol>
+
+<h4 id="notes">Notes</h4>
+
+<ul>
+  <li>Day One will not open after you run Build, but you will get a notification in Sublime Text’s console (along the bottom of the window) that a new entry has been created.</li>
+  <li>If you use the Build function regularly, be sure to change Build System back to either Automatic (or whatever system you regularly use) when you are done sending to Day One.</li>
+</ul>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>On iOS I prefer to compose entries in <a href="http://agiletortoise.com/drafts">Drafts</a> which has an excellent “Send to Day One” button. On the Mac…well, pay attention…<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>I stick with Avenir most of the time.<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+  <footer>
+    <!--<p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jonathan Poritsky</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-07T10:55:00+00:00" pubdate data-updated="true">December 7<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/technology/'>Technology</a>, <a class='category' href='/blog/categories/writing/'>Writing</a>
+  
+</span>
+
+
+    </p>-->
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2012/12/06/fountain-glassboard/" title="Previous Post: A Glassboard for Fountain">&laquo; A Glassboard for Fountain</a>
+      
+      
+        <a class="basic-alignment right" href="/2012/12/07/hobbitses/" title="Next Post: Don't Listen to the Movie Critics Who Say Negative Things About 'The Hobbit'!">Don't Listen to the Movie Critics Who Say Negative Things About 'The Hobbit'! &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+<p class=about-aside>The candler blog is a film theory and criticism (and other stuff) Web site by Jonathan Poritsky. You&#8217;re on it right now. Check out the <a href="http://feedpress.me/candlerblog">RSS</a> and <a href="https://twitter.com/thecandlerblog">Twitter</a> feeds to stay up to date. Now on App.net too: <a href='https://alpha.app.net/thecandlerblog' rel='me'><i class="icon-adn"></i></a></p>
+</section><section>
+  
+<p><form action="https://next.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="candlerblog.com" />
+    <input type="hidden" name="kj" value="#D45949"/>
+    <input type="hidden" name="kf" value="-1"/>
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form></p>
+  
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Jonathan Poritsky -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'candlerblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.candlerblog.com/2012/12/07/sublime-to-day-one/';
+        var disqus_url = 'http://www.candlerblog.com/2012/12/07/sublime-to-day-one/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

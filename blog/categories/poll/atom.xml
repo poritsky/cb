@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Poll | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/poll/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Poll: Ethics of Liveblogging]]></title>
+    <link href="http://www.candlerblog.com/2009/06/10/poll-ethics-of-liveblogging/"/>
+    <updated>2009-06-10T09:03:34+00:00</updated>
+    <id>http://www.candlerblog.com/2009/06/10/poll-ethics-of-liveblogging</id>
+    <content type="html"><![CDATA[<p><img src="http://farm4.static.flickr.com/3266/2553533075_9de9b2027c.jpg?v=0" alt="" />That
+picture of my old bathroom bears no relevance to this poll. I <em>guess</em> I could
+tie in live blogging on a toilet into this poll, but really I never have a
+reason to use this picture, so here it is. Now answer my question and I’ll
+abide by the rules of the poll.</p>
+
+<p>[poll id=”2”]</p>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Journalism | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/journalism/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Junk Netflix Reporting at Variety]]></title>
+    <link href="http://www.candlerblog.com/2014/08/07/junk-numbers/"/>
+    <updated>2014-08-07T18:00:00+00:00</updated>
+    <id>http://www.candlerblog.com/2014/08/07/junk-numbers</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/08/hoc-fu.jpg" title="Frank Underwood’s Cufflinks" ></p>
+
+<p>This morning Todd Spangler, <em>Variety’s</em> New York Digital Editor, published a piece with the juicy headline, “<a href="http://variety.com/2014/digital/news/netflix-originals-house-of-cards-orange-is-the-new-black-watched-by-fewer-than-half-of-subs-study-finds-1201277702/">Netflix Originals ‘House of Cards,’ ‘Orange Is the New Black’ Watched by Fewer Than Half of Subs, Study Finds</a>.” Two things jump out at me: Netflix does not release viewership and half of all subscribers is a whole lot of people. Oh, and also “Study Finds” feels like a big red flag.</p>
+
+<p>But I’ll bite. What’ve you got, Spangler?</p>
+
+<blockquote>
+  <p>Despite high awareness, fewer than half of Netflix users have ever watched one of the company’s two big originals, according to a new study from research and consulting firm Centris Marketing Science. Centris found that 44% of Netflix members have ever watched “OITNB,” while 31% said the same for “House of Cards.” Among Netflix subs, 94% have heard of “OITNB” and 89% have heard of “HoC” (while 72% of non-subscribers said they were aware of either series). For the study, Centris polled 562 U.S. households from July 17-20.</p>
+</blockquote>
+
+<p>That’s a small sample and a short time period. Good on Spangler for at least publishing as much. It’s strange though, that there is no link provided to this “new study,” or even to Centris’ site.</p>
+
+<p>So I put in some elbow grease and found that the “study” is actually <a href="http://centris.com/NetflixOriginals.html">just an infographic</a> Centris made. Every so often I get form emails from junk marketing companies asking me to publish an infographic that <em>the candler blog’s</em> readers might be interested in. This Centris infographic smacks of that desperation.</p>
+
+<p>Let’s dispense with this right now: the Centris numbers are meaningless. The time period is too small to tell us anything meaningful. It’s an embarrassment that <em>Variety</em> even published them.</p>
+
+<p>What’s <em>more</em> annoying, though, is that Spangler doesn’t even take his bunk conceit and run it against readily available numbers from Netflix. The company puts out detailed and highly readable quarterly reports on their <a href="http://ir.netflix.com">investor relations page</a>, the most recent of which <a href="http://files.shareholder.com/downloads/NFLX/2745669999x0x769748/9b21df7f-743c-4f0f-94da-9f13e384a3d2/July2014EarningsLetter_7.21.14_final.pdf">came out on July 21st (PDF)</a>, a date that lines up almost perfectly with the Centris “study.”</p>
+
+<p>Netflix reports 36.52 million domestic streaming subscribers. Centris claims 44% of Netflix subscribers have viewed <em>Orange is the New Black</em> and 31% have viewed <em>House of Cards</em>. That would mean <em>Orange is the New Black</em> has been seen by over 16 million subscribers; <em>House of Cards</em> by over 11 million. Here’s Spangler again:</p>
+
+<blockquote>
+  <p>Both “HoC” and “OITNB” recently launched second seasons. By comparison, season two of “Game of Thrones” had an average gross audience of 11.6 million viewers across linear TV, DVR, on-demand and HBO Go. That would represent in the neighborhood of 41% of HBO’s total subscriber base, meaning Netflix’s “Orange Is the New Black” may actually be outperforming “GoT” relatively speaking.</p>
+</blockquote>
+
+<p>This is a nonsense comparison. Streaming has expanded a great deal in the two years since the second season of <em>Game of Thrones</em> premiered. For example, Netflix only (<em>only</em>) had <a href="http://files.shareholder.com/downloads/NFLX/2745669999x0x562104/9ebb887b-6b9b-4c86-aeff-107c1fb85ca5/Investor%20Letter%20Q1%202012.pdf">22.02 million streaming subscribers (PDF)</a> back then. Spangler at least admits that <em>Orange is the New Black</em> might actually be a hit. What I don’t get is why the Netflix subscriber numbers aren’t brought up.</p>
+
+<p>Also, why is the headline and the tone of the whole article so negative? If you’re going to make the foolhardy decision to believe the Centris numbers, I don’t see how they point to anything other than great news for Netflix. 16+ million viewers, even if it’s only for part of a single episode, is astonishing.</p>
+
+<p>I think I know what happened here. Centris’ silly infographic paints the viewership numbers as a bland net negative: “Despite high awareness, fewer than half of Netflix subscribers have watched each show.” Wait a second, doesn’t that sound <em>exactly</em> like a sentence in Spangler’s piece? “Despite high awareness, fewer than half of Netflix users have ever watched one of the company’s two big originals…“</p>
+
+<p>Basically <em>Variety</em> published the opinion of a market research firm, copying the lede word for word. <a href="https://www.wordnik.com/words/boffo">Boffo</a> journalism, folks.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bruce Schneier on NYT Russian Hacker Story]]></title>
+    <link href="http://www.candlerblog.com/2014/08/07/schneier-on-the-secure-web/"/>
+    <updated>2014-08-07T14:50:00+00:00</updated>
+    <id>http://www.candlerblog.com/2014/08/07/schneier-on-the-secure-web</id>
+    <content type="html"><![CDATA[<p>Security expert Bruce Schneier isn’t convinced <a href="http://www.nytimes.com/2014/08/06/technology/russian-gang-said-to-amass-more-than-a-billion-stolen-internet-credentials.html">this <em>New York Times</em> piece</a> about Russian hackers collecting 1.2 billion passwords tells the whole story. In a <a href="https://www.schneier.com/blog/archives/2014/08/over_a_billion_.html">piece published this morning</a>, Schneier points to a <a href="http://www.forbes.com/sites/kashmirhill/2014/08/05/huge-password-breach-shady-antics/"><em>Forbes</em> article</a><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> that suggests the <em>Times</em> piece is part of a publicity push on the part Hold Security, the firm that discovered the breach.</p>
+
+<p>More interesting, though, is Schneier’s affirmation that the secure web as we know it is actually working (emphasis mine):</p>
+
+<blockquote>
+  <p>We’re not seeing massive fraud or theft. We’re not seeing massive account hijacking. A gang of Russian hackers has 1.2 billion passwords – they’ve probably had most of them for a year or more – and everything is still working normally. This sort of thing is pretty much universally true. You probably have a credit card in your wallet right now whose number has been stolen. There are zero-day vulnerabilities being discovered right now that can be used to hack your computer. <strong>Security is terrible everywhere, and it it’s all okay.</strong> <em>[sic]</em> This is a weird paradox that we’re used to by now.</p>
+</blockquote>
+
+<p>That’s all oddly comforting to me. Anyway…time to change your passwords.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Schneier quotes but doesn’t link to the article. <em>Forbes</em> has turned into a pretty awful outlet/content farm. They are not above publishing complete bullshit for clicks. That Schneier’s perspective comes from a <em>Forbes</em> piece gives me pause, but I respect his opinion enough to listen up.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>It’s times like these I really love <a href="https://agilebits.com/onepassword">1Password</a>. I use it on <a href="https://itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12&amp;at=11l5Fb">Mac</a> and <a href="https://itunes.apple.com/us/app/1password-password-manager/id568903335?mt=8&amp;uo=4&amp;at=11l5Fb">iOS</a> every day. (Affiliate links: I thank you in advance.)<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How The New York Times Handles Israeli Censorship]]></title>
+    <link href="http://www.candlerblog.com/2014/08/06/censorship/"/>
+    <updated>2014-08-06T15:28:00+00:00</updated>
+    <id>http://www.candlerblog.com/2014/08/06/censorship</id>
+    <content type="html"><![CDATA[<p>Jodi Rudoren, Jerusalem bureau chief for <em>The New York Times</em>, on <a href="https://medium.com/@lydiapolgreen/how-the-new-york-times-handles-israeli-censorship-22bcfa5addb">the appearance of a military censor disclaimer</a> in one of her recent stories: </p>
+
+<blockquote>
+  <p>Any censorship is a huge compromise. In these cases, though, the actual cost to readers’ understanding was limited.</p>
+</blockquote>
+
+<p>The short of it: <em>The Times</em> withheld the relationship of Second Lt. Hadar Goldin, initially thought kidnapped, to defense minister Moshe Ya’alon. This sounds less like censorship and more like an abundance of caution for the safety of a prisoner of war.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+
+<p>But it <em>is</em> still censorship. Good on Rudoren for being transparent about the process.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>One day after word of his abduction ground a 72-hour cease fire attempt to a halt, the Israeli military announced that <a href="http://www.nytimes.com/2014/08/03/world/middleeast/israel-gaza-conflict.html">Lieutenant Goldin had been killed in action</a>.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Flat-Out Sensational Lie]]></title>
+    <link href="http://www.candlerblog.com/2014/08/05/a-sensational-lie/"/>
+    <updated>2014-08-05T21:47:00+00:00</updated>
+    <id>http://www.candlerblog.com/2014/08/05/a-sensational-lie</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/08/tablet.png" title="Tablet Headline" ></p>
+
+<p>Almost three years ago, while taking another writer to task for <a href="http://candlerblog.com/2011/11/16/cough/">an unprovoked swipe</a> at <em>Heeb</em> (where I used to serve as Arts Editor), I referred to <em>Tablet Magazine</em> as “<em>The New Yorker</em> of the Jewish publishing world.” In the ensuing years, though, this description hasn’t really held up. The outlet has turned into a home for linkbait and short, traffic-jacking posts. Does <em>Tablet</em> publish any good content anymore? Yes. Does it excuse their offenses (which I find to be more numerous)? Of course not.</p>
+
+<p>I feel compelled to call out <em>Tablet</em> for a <a href="http://www.tabletmag.com/scroll/181206/new-york-times-slams-its-own-pulitzer-prize-winning-photographer-in-gaza">cowardly, false and unconscionable article</a> published August 1st.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> Titled “New York Times Slams Its Own Pulitzer-Prize Winning Photographer In Gaza, [subhead:] Says Legendary Photojournalist Tyler Hicks is Bad at His Job,” the piece was published unsigned, using only the tag “Staff Notes” to mark any form of authorship. The headline is a sensational lie that doesn’t even match the article’s own broken logic.</p>
+
+<p>The baseless headline comes from the following statement <a href="http://www.jta.org/2014/07/31/news-opinion/nyt-on-why-no-photos-of-hamas-fighters-we-dont-have-any-1">given to the Jewish Telegraphic Agency</a> by Eileen Murphy, the <em>Times’</em> head of communications,<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> when asked why there are so few photos of Hamas militants in the <em>Times</em>:</p>
+
+<blockquote>
+  <p>Our photo editor went through all of our pictures recently and out of many hundreds, she found 2 very distant poor quality images that were captioned Hamas fighters by our photographer on the ground. It is very difficult to identify Hamas because they don’t have uniforms or any visible insignia; our photographer hasn’t even seen anyone carrying a gun.</p>
+
+  <p>I would add that we would not withhold photos of Hamas militants. We eagerly pursue photographs from both sides of the conflict, but we are limited by what our photographers have access to.</p>
+</blockquote>
+
+<p>In no way does Murphy even come close to suggesting Hicks is “bad at his job.” Regardless of your opinion as to whether or not the statement is accurate or representative, calling it a “slam” is a flat-out lie.</p>
+
+<p>And that says nothing of the piece itself which asserts right up front, pseudo-couched in the falsehood that a <em>New York Times</em> spokesperson said as much, “Pulitzer Prize-winning photographer Tyler Hicks really sucks at his job.”</p>
+
+<p>Tyler Hicks, who <a href="http://www.nytimes.com/slideshow/2012/03/03/world/middleeast/20120304-IDLIB.html?ref=middleeast#1">photographed the Syrian uprisings</a> before carrying the body of his colleague <a href="http://www.nytimes.com/2012/03/04/world/middleeast/bearing-witness-in-syria-a-war-reporters-last-days.html?pagewanted=all">Anthony Shadid out of Syria</a>, really sucks at his job. Tyler Hicks, who <a href="http://lens.blogs.nytimes.com/2013/09/21/witness-to-a-massacre-in-a-nairobi-mall/">ran into Westgate mall in Nairobi</a> when he heard shots fired and captured the horror and panic of a terrorist attack in progress, really sucks at his job. Tyler Hicks, who, while covering the overthrow of Qaddafi in Libya, <a href="http://www.nytimes.com/2011/03/23/world/africa/23times.html?pagewanted=all">was held prisoner</a> and told by his captor, “You have a beautiful head. I’m going to remove it and put it on mine. I’m going to cut it off,” really sucks at his job.</p>
+
+<p>Hicks’ many plaudits and experiences do not shield him from criticism. But perhaps they should give one pause before lobbing baseless ad hominem attacks because his work does not fit your narrative.</p>
+
+<p><em>Tablet’s</em> unnamed author hooks on to the word “access” in Eileen Murphy’s statement.</p>
+
+<blockquote>
+  <p>How does being dependent on Hamas for your daily access–not to mention your life–potentially impact coverage? Well, the fact that the Times has only two distant, grainy, unusable images of Hamas gunmen from Tyler Hicks tells you all you need to know, doesn’t it.[sic]</p>
+</blockquote>
+
+<p>I’m not sure what the author sees as the alternative, here. Hicks’ access isn’t limited in the way an entertainment journalist’s access is limited, i.e. the interview is over if you bring up the starlet’s ex-husband. “Access” in a war zone means life or death. A photojournalist cannot work if s/he is dead. The top priority, always, should be getting home with the story in tow.<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
+
+<p>Today, in an <a href="http://lens.blogs.nytimes.com/2014/08/05/looking-for-the-enduring-photo-in-gaza/">interview with James Estrin on the <em>Times’</em> Lens Blog</a>, Hicks roundly answers critics of his work, like <em>Tablet</em>:</p>
+
+<blockquote>
+  <p>This is a war fought largely behind the scenes. Hamas fighters are not able to expose themselves. If they were to even step a foot on the street they would be spotted by an Israeli drone and immediately blown up. We don’t see those fighters. They are operating out of buildings and homes and at night. They are moving around very carefully. You don’t see any signs of authority on the streets. If you can imagine every police officer, every person of authority in America gone, this is what that would look like.</p>
+
+  <p>If we had access to them, we would be photographing them. I never saw a single device for launching the rockets to Israel. It’s as if they don’t exist.</p>
+
+  <p>Sometimes people assume that you can have access to everything, that you can see everything. But the fighters are virtually invisible to us. What we do as photographers is document what we can to show that side of the war. There are funerals, there are people being rushed to the hospital, but you can’t differentiate the fighters from the civilians. They are not wearing uniforms. If there is someone coming into the hospital injured, you can’t tell if that’s just a shopkeeper or if this is someone who just fired a rocket towards Israel. It’s impossible to know who’s who. We tried to cover this as objectively as possible.</p>
+</blockquote>
+
+<p>Perhaps this won’t satisfy critics of either Hicks or the <em>New York Times</em>, but I think it offers fascinating insight into the conflict on the whole. Critics of Israel will often point to the lopsided casualty count (a gruesome metric, indeed) on the Israeli and Palestinian sides, while supporters will say the Israeli Defense Forces have no choice but to operate as they do because the rockets are launched from civilian areas. This is exactly in line with Hicks’ statement. He can’t photograph what he can’t see. And if the Israeli military itself has trouble locating and neutralizing rockets, how could a photojournalist fare any better?</p>
+
+<p>In the end, though, <em>Tablet’s</em> article was false when they published it and has now been dismantled. It’s shameful to see anyone put this drivel out into the world, and all the more shocking and sad that it should come from an outlet that once showed so much promise. A retraction or at the very least an editorial comment is in order, but I doubt we’ll see one. One can’t expect much from a writer who doesn’t even sign his or her own work.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Journalism professor Jay Rosen was kinder and called the piece “<a href="https://twitter.com/jayrosen_nyu/status/496680842937520128">unwise</a>.”<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Murphy is listed as “Vice President, Corporate Communications” <a href="https://www.linkedin.com/pub/eileen-murphy/9/79A/AB8">on LinkedIn</a> and is often quoted as a “spokeswoman for <em>The Times</em>.” I have chosen to use the job title on her <a href="https://twitter.com/NYTeileen">Twitter bio</a>, head of communications.<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>It’s worth noting that on the same day as <em>Tablet’s</em> Hicks article, the <em>Times</em> itself was informed that a published story would become <a href="http://publiceditor.blogs.nytimes.com/2014/08/01/times-foreign-editor-responds-on-israeli-censorship/">subject to military censorship</a> by Israel.<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Journalism is Crap Because Facebook, Says Vox]]></title>
+    <link href="http://www.candlerblog.com/2014/05/23/facebook-v-vox-dawn-of-justice/"/>
+    <updated>2014-05-23T17:09:00+00:00</updated>
+    <id>http://www.candlerblog.com/2014/05/23/facebook-v-vox-dawn-of-justice</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2014/05/voxfb.png" title="Facebook all up in Vox" ></p>
+
+<p>Let’s start with Matthew Yglesias’s first, illustrative mistake. In a defensive, reactionary piece over at Vox, “<a href="http://www.vox.com/2014/5/22/5742148/facebook-product-director-furious-at-facebook-s-effect-on-news">Facebook product director furious at Facebook’s effect on news</a>,” the writer and in-house <a href="http://www.vox.com/authors/matthew-yglesias">Red Mage</a> sets up a response to a Facebook post by Mike Hudack by describing him, “importantly,” as “Director of Product at Facebook.” Yglesias includes a link to <a href="https://www.linkedin.com/in/mhudack">Hudack’s LinkedIn profile</a> which, sure as shit, says “Director of Product at Facebook” right up top.</p>
+
+<p>Something sounded off about that title to me, so I took the extra five seconds to figure out who the hell Hudack is. Some 500px south of Hudack’s name on LinkedIn, his current position is listed as “Director of Product Management” for Facebook. His personal website lists his current position as “Director of Product Management for Ads and Pages at Facebook,” which, I think it’s fair to say, sounds like an actual job I can wrap my head around. It also makes more sense to me that someone with such localized interest at Facebook would feel free to lob bombs at the media: a director of <em>all</em> product can’t afford to be so cavalier.</p>
+
+<p>The point is that Yglesias (whose <a href="https://www.linkedin.com/pub/matthew-yglesias/6/571/6ba">LinkedIn profile</a> lists him as Associate Editor at The Atlantic Monthly, an outlet he hasn’t published at in almost three years) misleads readers right up front out of a glaring disregard for getting the simple facts right. And he does so in a piece about how Facebook is ruining the news.</p>
+
+<p>With that out of the way, what did Hudack say? And how did Yglesias respond?</p>
+
+<p>Hudack’s <a href="https://www.facebook.com/mhudack/posts/10152148792566194">self-described rant</a> takes much of the media (print, web and television) to task for just reporting “what people tell them, whether it’s Cheney pulling Judith Miller’s strings or Snowden through the proxy of Glenn Greenwald doing roughly the same.” It’s not exactly quotable, but it’s well worth the read. It cuts to the heart, if ham-handedly, of how shitty the media landscape appears to an outside observer.</p>
+
+<p>His final three paragraphs are dedicated to tearing Vox apart.</p>
+
+<blockquote>
+  <p>Personally I hoped that we would find a new home for serious journalism in a format that felt Internet-native and natural to people who grew up interacting with screens instead of just watching them from couches with bags of popcorn and a beer to keep their hands busy.</p>
+
+  <p>And instead they write stupid stories about how you should wash your jeans instead of freezing them.</p>
+</blockquote>
+
+<p>No wonder Yglesias had to respond. Vox has to defend itself. Personally, I think Editor-in-Chief Ezra Klein should really have crafted the site’s response since Hudack calls him out by name, but I’ll just assume Yglesias is speaking for the site and its EIC in the only formal acknowledgment of being called stupid.</p>
+
+<p>Yglesias gets right into it:</p>
+
+<blockquote>
+  <p>…it is not hard to tell who is to blame for the fact that the <a href="http://www.vox.com/2014/5/21/5738014/sorry-levis-you-cant-clean-your-jeans-by-freezing-them">jeans story</a> (which is a great, interesting, informative story) got more readers than <a href="http://www.vox.com/2014/5/22/5723878/how-a-bill-becomes-a-law-in-2014">Andrew Prokop’s excellent feature on the DATA Act</a>. Facebook is to blame.</p>
+</blockquote>
+
+<p>Go on…</p>
+
+<blockquote>
+  <p>…for better or for worse, traffic on the internet right now is all about Facebook sharing behavior.</p>
+</blockquote>
+
+<p>Ah. Now we have arrived at the disconnect. Traffic on the Internet is about Facebook sharing behavior. In order to get into the headspace of Yglesias and be able to blame Facebook for the proliferation of bunk content, you have to first accept that getting traffic is the point of journalism.</p>
+
+<p>Here’s where Hudack (and me) and Yglesias part ways. Hudack wants journalism, Yglesias wants clicks.</p>
+
+<p>Naturally, this runs into bigger questions of monetization, advertising, journalist pay, etc., etc. One thing that has become abundantly clear to me over the past two years is that the click economy is untenable. Getting attention on the web has proven to be eminently game-able. Great journalism still can’t be gamed, it can’t be faked.</p>
+
+<p>Blaming Facebook for the state of journalism is a child’s argument. It misses the point of the bigger issues at hand: that chasing ratings or clicks or subscribers is deleterious to great writing. But it’s easier to hate the player than the game.</p>
+
+<p>Anyway, <a href="http://www.vox.com/2014/5/23/5742748/why-college-women-are-faking-orgasms">why do women fake orgasms</a>? Go to the Vox, the future of news, to find out.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

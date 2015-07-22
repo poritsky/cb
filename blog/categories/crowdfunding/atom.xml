@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Crowdfunding | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/crowdfunding/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ambition, Risk and Failure on Kickstarter]]></title>
+    <link href="http://www.candlerblog.com/2015/05/07/risk-on-kickstarter/"/>
+    <updated>2015-05-07T21:16:00+00:00</updated>
+    <id>http://www.candlerblog.com/2015/05/07/risk-on-kickstarter</id>
+    <content type="html"><![CDATA[<p>James Grimmelmann’s excellent, brief <a href="http://2d.laboratorium.net/post/118123399970/riskstarter">“Riskstarter”</a> needs to be bookmarked and revisited regularly:</p>
+
+<blockquote>
+  <p>Kickstarter specializes in creative projects, but creative projects are inherently risky. They are risky in an artistic sense: creativity is an uncertain and unpredictable process. They are risky in a transactional sense: you never know how good a book is going to be until you’ve read it. And they are risky in a financial sense: they take investments that may never be recouped by anyone.</p>
+</blockquote>
+
+<p>The impetus for Grimmelmann’s piece is last weekend’s <a href="http://www.nytimes.com/2015/05/03/magazine/zpm-espresso-and-the-rage-of-the-jilted-crowdfunder.html"><em>New York Times Magazine</em> article on the failed ZPM espresso machine</a>. Crowdfunding continues to be something that delights, inspires and confounds people. What’s wonderful about this piece is that it casts Kickstarter and the like in creative, not capitalist, terms. Contributing to a campaign is not an investment in the traditional sense. You don’t own a portion of whatever it is you’re trying to help get off the ground. You contribute because you think the world might be a little better if this movie, book, album or iPhone case were in it. That’s the proposition.</p>
+
+<p>Still, things get hairy whenever money changes hands, and the ZPM story sounds awful for all parties, but Grimmelman’s final point is his best:</p>
+
+<blockquote>
+  <p>If Kickstarters never failed, it would mean that creators weren’t being ambitious enough.</p>
+</blockquote>
+
+<p>Exactly.</p>
+
+<p>(via <a href="http://kottke.org/15/05/kickstarter-and-failure">Jason Kottke</a>.)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kickstarter Archives]]></title>
+    <link href="http://www.candlerblog.com/2015/02/19/kickstarter-preservation/"/>
+    <updated>2015-02-19T12:55:00+00:00</updated>
+    <id>http://www.candlerblog.com/2015/02/19/kickstarter-preservation</id>
+    <content type="html"><![CDATA[<p>Kickstarter <a href="https://www.kickstarter.com/pages/archive-projects">set up a page</a> for projects aimed at preserving works, including a few films:</p>
+
+<blockquote>
+  <p>Join us as we highlight creators who are doing valuable work in looking back and shining a new light on lost or forgotten works through preservation, restoration, remastering, reprinting, etc.</p>
+</blockquote>
+
+<p>Some very cool projects listed there. Oscilloscope Laboratories is $3,000 and eight days shy of restoring Kelly Reichardt’s 1994 film, <em>River of Grass</em>. Interesting rewards, too, like a LaserDisc chosen at random from the company’s screening library. They know their audience. </p>
+
+<p>(via <a href="http://www.indiewire.com/article/help-save-cinema-history-with-film-preservation-kickstarter-campaigns-20150215">Indiewire</a>.)</p>
+
+]]></content>
+  </entry>
+  
+</feed>

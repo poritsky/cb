@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Blogging | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/blogging/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Some AppleScript and TextExpander Goodies for Octopress]]></title>
+    <link href="http://www.candlerblog.com/2012/10/10/textexpander-applescript-and-octopress/"/>
+    <updated>2012-10-10T12:08:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/10/10/textexpander-applescript-and-octopress</id>
+    <content type="html"><![CDATA[<p>I’ve grown quite fond of TextExpander over the past year, but never more so than when I’m blogging with Octopress. Slowly I’ve built up an arsenal of snippets to make writing posts easier. Allow me to explain the thinking behind a few.</p>
+
+<p>If you’re impatient just head to the bottom of the article for download info. And if you’re uninterested in this blogging from blogging, I’ll see you at the next post.</p>
+
+<h3 id="rake-what-rake">Rake? What Rake?</h3>
+
+<p>The fastest way to start up a new post is to <code>cd</code> into your Octopress install in a Terminal and type <code>rake new_post["Post Title"]</code>. This generates a brand new <code>.markdown</code> file in your <code>/source/_posts/</code> directory with filled in YAML front matter. So with my sample rake just a few sentences back, we would get a new file called <code>2012-10-10-post-title.markdown</code> pre-populated with the following:</p>
+
+<h2 id="section">```</h2>
+<p>layout: post
+title: “Post Title”
+date: 2012-10-10 12:54
+comments: true
+categories: 
+—
+```</p>
+
+<p>I never really enjoyed having to go to the command line just to start a new post. Worse, I usually don’t know what I want to call a post, nor what the URL should be right away, but I like getting that YAML filled in nonetheless. Lucky for me, all I need to do is create a file in the <code>/source/_posts/</code> folder with the proper file naming convention and YAML filled in. Enter TextExpander.</p>
+
+<h3 id="editing-text-via-ftp">Editing Text via FTP</h3>
+
+<p>Quick sidebar here. Back in August, Gabe over at Macdrifter gave an excellent overview of <a href="http://www.macdrifter.com/2012/08/working-remotely-with-sublime-text-and-bbedit-ftp-access.html">how he edits text via FTP</a>. He provides detailed instructions to set up both Sublime Text 2 and BBEdit to work with text on an FTP server. I’ve tried both but prefer the latter, with one difference: I use <a href="http://www.textwrangler.com/products/textwrangler/">TextWrangler</a>.</p>
+
+<p>TextWrangler is probably the best bargain on the Mac inasmuch as it’s free. It’s essentially a stripped down version of BBEdit, but the features it’s missing hardly hamper it, if you ask me. For example, it still connects via FTP or SFTP to the server and directory of your choosing.</p>
+
+<p>Following Gabe’s instructions, I set up a path right to my <code>source/_posts</code> directory. Now, I can open from (⌘^O) or save to (⌘^S) my server right from the keyboard. Now all I need to do is properly format that YAML and URL.</p>
+
+<h3 id="a-simple-and-a-not-so-simple-yaml">A Simple and a Not-So-Simple YAML</h3>
+
+<p>Let me get this URL thingamajig out of the way. Here’s what the TextExpander snippet looks like:</p>
+
+<p><code>
+%Y-%m-%d-%|.markdown
+</code></p>
+
+<p>That gives you a file with today’s date and your cursor correctly placed so you can start typing the filename. Remember, all lowercase and no spaces. I use <code>uurl</code> to call this one when I’m saving a file.</p>
+
+<p>Now, as to the YAML front matter. I’ve got a basic one that I call with <code>yyaml</code>. You can dig into the snippet at the bottom to really see what’s going on, but basically it gives you a blank YAML with the time and date pre-populated and the cursor positioned to give the post a title.</p>
+
+<p>Most of my posts on the candler blog, however, are link posts. For those I have to add a line to my YAML for <code>external-url</code>. For that I now turn to an AppleScript snippet that fills in almost everything I need to post right away.</p>
+
+<p>The groundwork for this was <a href="http://canadian-fury.com/2012/09/06/applescript-and-friends-octopress-textexpander-and-ruby/">laid by Doug Stephen</a> with his snippet to strip out some oddities from a URL and create a new link blog type post from it. In his method he actually modified his rake task to create link posts when he entered a title with a specific format, but that’s all command line-y, so it’s no good for me. The brilliance in his work was actually stripping out the long, useless additions URLs, especially from RSS feeds, tend to have. All of that has been retained in my tweak here.</p>
+
+<p>So here’s the workflow I was looking for (and have actually achieved):</p>
+
+<ol>
+  <li>Find a cool story I want to link in Safari.</li>
+  <li>Select the text I plan to quote.</li>
+  <li>Fire up a blank TextWrangler document, type TextExpander snippet.</li>
+  <li>Editorialize as needed.</li>
+</ol>
+
+<p>The following AppleScript, when saved as a snippet, does all of that, though it’s not the snippet I prefer.</p>
+
+<p>```
+on replaceCommasInStringWithHTMLEntity(theTitle)
+	set rubyCommand to quote &amp; “puts “ &amp; “’” &amp; theTitle &amp; “’” &amp; “.gsub( /,/, ‘,’ )” &amp; quote
+	set strippedTitle to do shell script “ruby -e “ &amp; rubyCommand
+	return strippedTitle
+end replaceCommasInStringWithHTMLEntity</p>
+
+<p>on stripUTMFromURL(urlToStrip)
+	set rubyCommand to quote &amp; “puts “ &amp; “’” &amp; urlToStrip &amp; “’” &amp; “.gsub( /\?utm.*$/, ‘’ )” &amp; quote
+	set strippedURL to do shell script “ruby -e “ &amp; rubyCommand
+	return strippedURL
+end stripUTMFromURL</p>
+
+<p>tell application “Safari”
+	set pageTitle to name of document 1
+	set currentURL to URL of current tab of window 1
+	set selectedText to (do JavaScript “window.getSelection().toString()” in document 1)
+end tell</p>
+
+<p>set pageTitle to replaceCommasInStringWithHTMLEntity(pageTitle)
+set currentURL to stripUTMFromURL(currentURL)
+set theDate to current date</p>
+
+<p>return “—” &amp; “
+“ &amp; “layout: post” &amp; “
+“ &amp; “title: “ &amp; “"” &amp; pageTitle &amp; “"” &amp; “
+“ &amp; “date: “ &amp; (do shell script “date +%Y”) &amp; “-“ &amp; (do shell script “date +%m”) &amp; “-“ &amp; (do shell script “date +%d”) &amp; “ “ &amp; (do shell script “date +%H”) &amp; “:” &amp; (do shell script “date  +%M”) &amp; “
+“ &amp; “comments: true” &amp; “
+“ &amp; “categories: “ &amp; “
+“ &amp; “- “ &amp; “
+“ &amp; “external-url: “ &amp; currentURL &amp; “
+“ &amp; “—” &amp; “
+“ &amp; “
+“ &amp; “&gt; “ &amp; selectedText
+```</p>
+
+<p>It works excellently, as advertised. And thanks to Doug Stephen’s work cluttered URLs come across clean. My one gripe was that, since the whole snippet is an AppleScript, the cursor cannot be placed within the YAML text. But I found a workaround.</p>
+
+<h3 id="snippets-all-the-way-down">Snippets All the Way Down</h3>
+
+<p>Until just yesterday, I had no idea one could embed a TextExpander snippet inside a TextExpander snippet. Let me say that again: <strong>you can embed a TextExpander snippet inside a TextExpander</strong>. And as many times as you like. It’s as easy as adding putting in a snippet placeholder.</p>
+
+<p>With that in mind, I created separate snippets from the AppleScript above to get the page title, the URL and the selected text; three separate AppleScript snippets. Then I created my snippet for link post YAML front matter incorporating the snippets for title, URL and quoted text appropriately.</p>
+
+<p>The main advantage here is that users of other static blogging engines can incorporate the AppleScript to fit their YAML template. Additionally, it’s much easier to change the text output from within TextExpander than to modify the ray AppleScript.</p>
+
+<h3 id="download">Download</h3>
+
+<p>I’m using <a href="https://github.com/ttscoff/Brett-s-TextExpander-Snippets">Brett Terpstra’s nifty TextExpander tool</a> to help you make some sense of the snippets I’ve listed above. You can see them all laid out <a href="http://poritsky.com/te-snippets/">here</a>. Please note that I haven’t implemented Brett’s “prefix” system here, so the expansion abbreviations won’t change if you add commas as a prefix. I recommend downloading the snippets and adjusting their abbreviations as needed. Here’s <a href="http://poritsky.com/te-snippets/te-download.php?group=Octopress%20Snippets&amp;prefix=%2C%2C">the download link</a>.</p>
+
+<p>And that’s about it. Happy blogging.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Syndicating Link Posts From a Static Blog to Twitter Without...Well, Let Me Explain]]></title>
+    <link href="http://www.candlerblog.com/2012/08/31/static-link-posts-to-tweets/"/>
+    <updated>2012-08-31T16:56:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/08/31/static-link-posts-to-tweets</id>
+    <content type="html"><![CDATA[<p>A few weeks ago I started syndicating all of the posts from the candler blog to a new Twitter account, <a href="http://twitter.com/thecandlerblog">@thecandlerblog</a>. Since I’m off Wordpress and thus can’t use a fancy-pants plugin to achieve this, I decided to use an <a href="https://ifttt.com">If This Then That (IFTTT)</a> recipe to take my site’s RSS feed and send out a tweet on the new account. Easy!</p>
+
+<p>Not so fast. I ran into a bit of a problem that I figured was edge case-y enough that I didn’t need to bother you all with the nerdy details of how I fixed it. But Doug Stephen just <a href="http://canadian-fury.com/2012/08/31/an-absolutely-ridiculous-hack-to-syndicate-octopress-to-twitter-via-ifttt-with-support-for-linklog-posts/">posted his own hack</a> to solve the exact same issue, so I figure it’s time for me to share the sauce (really, it’s very boring sauce) on how I got it up and running.</p>
+
+<h3 id="the-problem">The Problem</h3>
+
+<p>There are two kinds of posts on the candler blog: Normal, long-ish blog posts like the one you’re reading right now, and link posts,<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> which are shorter and feature a headline that links out to a different site. I love writing link posts, and I encourage readers to go check out the sites I’m linking to. I’m only too happy to have readers subscribe to <a href="http://feeds.feedburner.com/thecandlerblog">my RSS feed</a> and experience the site through a feed reader.</p>
+
+<p>However, this setup doesn’t quite work on Twitter. All I want posted to the site’s official feed is the post title and the URL back to the candler blog. Why? Because I believe the full experience of what I’m trying to do here comes from the headline I choose, the sites I link to and the commentary I write.</p>
+
+<p>The IFTTT RSS to Twitter recipe can only syndicate the post’s title and the URL it points to. In the case of link posts, all you will see is a headline and a link to some other site. That would be all well and good except it basically diminishes the whole experience of reading the candler blog. There will be no context for the link. Or the headline. So that wouldn’t do.</p>
+
+<h3 id="the-fix">The Fix</h3>
+
+<p>Enter <a href="http://pipes.yahoo.com/">Yahoo! Pipes</a>. If you’ve never played with Pipes before, I highly recommend taking it for a spin. I barely know the full potential of the tool, but I do know this: it allows you to take any RSS feed, even multiple feeds, and rewire them to your liking. Want to mash some feeds together? What to get a new feed featuring only the work of a single author? How about only tagged with things you are interested in? It’ll do all of that and more. And it allows me to reconfigure my site’s feed to change the destination of link post URLs back to the candler blog. Here’s a quick look at what my pipe looks like:</p>
+
+<p>{% img center /images/2012/08/pipe.jpg My Link Fixing Pipe %}</p>
+
+<p>The first little window you see is simply there to fetch my site’s RSS feed. All that needs doing there is to plug in the Feedburner URL of my feed. Easy.</p>
+
+<p>The next window is where all of the magic happens. The Create RSS module (under “Operators” in pipes) allows you to do the rerouting of feed level items. In short, it gives you a blank slate of an RSS feed, and then allows you to plug in whatever data from your feed you want. In my case, every part of the feed should remain the same except for the Link section. Items like title and description are all available from a drop down in the RSS creator module. All I needed to find was which operator to plug into the link level to tell pipes to use each post’s permalink as its title link.</p>
+
+<p>Following?</p>
+
+<p>Along the bottom of the pipes interface is a handy little tool that displays whatever your feed looks like on the selected module. To find the permalink in the feed, I selected the Fetch Feed module (the one at the top) and started digging through the feed output? Here’s what it looks like:</p>
+
+<p>{% img center /images/2012/08/pipe-display.jpg Pipe Output Display %}</p>
+
+<p>The permalink pointing to my site is, luckily, easy enough to find under <code>guid &gt; content</code>. Simply type <code>item.guid.content</code> into the Create RSS line for Link and connect it to the pipe output. Now, instead of the external link, the RSS headline will be point to the original candler blog post.</p>
+
+<p>Save the pipe, then from the “My Pipes” page, grab the new RSS feed. Go back to IFTTT and create a recipe using the pipe RSS feed. Boom. A convoluted workaround to account for link posts.</p>
+
+<h3 id="almost-done">Almost Done</h3>
+
+<p>All this automation is well and good, but sometimes I like to push it along. For that, I have a few handy bookmarks in a folder that I click after posting.</p>
+
+<p>First off is pinging my feed. Feedburner is <em>supposed</em> to ping your site every 30 minutes, but, you know, Feedburner sucks. Luckily, they have a <a href="http://feedburner.google.com/fb/a/ping">manual pinging page</a> where you can enter your feed and ping away. The URL of the page that returns when you do this is actually all you need to set off a manual ping, so after you do it manually, just drag the page to your bookmarks bar and save it. The URL should look like this:</p>
+
+<p><code>
+http://feedburner.google.com/fb/a/pingSubmit?bloglink=http%3A%2F%2Ffeeds.feedburner.com%2F[your-feed-name-here]
+// Sans brackets, of course. //
+</code></p>
+
+<p>Next, I like to check on my pipe and make sure it refreshed. To do that, I simply saved the direct URL to my pipe as a bookmark. After I ping Feedburner, I go and check that the pipe received the update. If it hasn’t, no worries, it picks it up quickly enough.</p>
+
+<p>Finally, I keep a bookmark handy that points directly to the IFTTT page for the Twitter posting recipe. I tried saving IFTTT’s built in <code>force-run</code> URL scheme, but I have been unable to actuate it from the Bookmarks Bar. Visiting it simply takes me back to my recipe page. If I really want a tweet to go out right away, I go to the IFTTT page for the recipe and click “Check Now.” I’ve stopped doing this unless I plan to post more than one post in the space of 15 minutes, IFTTT’s automated (and quite reliable) refresh time.</p>
+
+<h3 id="go-forth-and-post">Go Forth and Post</h3>
+
+<p>If I had to guess, I’d say it took me about 15 times as long to write this blog post as it did to set up this Pipe and IFTTT recipe. Both tools work incredibly well together. Pipes is powerful for taking any number of RSS feeds and turning them into the content that you want, and IFTTT allows you to do all kinds of wacky stuff with an RSS feed. And now that I’ve set it up I rarely think about it, so I’m glad I did.</p>
+
+<p>This system works well for me on Octopress, but I assume that it works similarly for any static blogging system. Your mileage may vary, but I’d love to hear what blogging engines this works on and which ones it breaks. And if you have ideas on how to finesse this, please do share.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Or Linked List posts or Linklogs or Linkblogs, pick your poison.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Make a Linked List With Octopress]]></title>
+    <link href="http://www.candlerblog.com/2012/01/30/octopress-linked-list/"/>
+    <updated>2012-01-30T10:00:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/01/30/octopress-linked-list</id>
+    <content type="html"><![CDATA[<p>Here’s a Twitter exchange that I woke up to this morning:</p>
+
+<blockquote class="twitter-tweet tw-align-center"><p>@<a href="https://twitter.com/octopress">octopress</a> Has anyone written a script to get Daring Fireball-style Linked List posts? How easy might that be?</p>&mdash; Robinson Meyer (@yayitsrob) <a href="https://twitter.com/yayitsrob/status/163819877054939136" data-datetime="2012-01-30T03:04:36+00:00">January 30, 2012</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center"><p>@<a href="https://twitter.com/yayitsrob">yayitsrob</a> yes. @<a href="https://twitter.com/poritsky">poritsky</a> has done it here: <a href="http://t.co/3vB0MkHo" title="http://www.candlerblog.com">candlerblog.com</a> perhaps he'll tell you how (and me).</p>&mdash; Octopress (@octopress) <a href="https://twitter.com/octopress/status/163840417329184769" data-datetime="2012-01-30T04:26:14+00:00">January 30, 2012</a></blockquote>
+
+<p>Fair warning: this is going to be one of those “how to code” type posts. I’ll return to the regularly scheduled film-related nonsense shortly.<!-- more --></p>
+
+<p>Okay, so, “Daring Fireball-style Linked List posts,” for the uninitiated, refers to the publishing style of John Gruber’s <a href="http://www.daringfireball.net">Daring Fireball</a>. For the most thorough explanation of how this works, see Shawn Blanc’s excellent 2009 article, <a href="http://shawnblanc.net/2009/08/the-link-post/">“The Link Post,”</a> in which he calls this kind of link “The Out and About”:</p>
+
+<blockquote>
+  <p>What especially sets The Out and About apart is its feed format. Because not only do the Link Post titles point directly to the linked-to content, but so do those in the RSS feed.</p>
+</blockquote>
+
+<p>That’s basically how I implement link posts here on the candler blog. Regular posts feature unadorned headlines while link posts are denoted by an additional glyph at the end of the headline. I use the double arrow, ⇒ (<code>&amp;rArr;</code> in HTML).[^1] The headlines of all link posts go to another site, both in your web browser and in your RSS application. They also feature a permalink at the bottom of the post so you can always find a way to get back to my site, which usually features commentary of some lasting value (I hope).</p>
+
+<p>But how is it done in Octopress? It’s actually very simple. I got a great deal of help, when I was first setting up the site, from <a href="http://www.cnnr.me/">Connor Montgomery</a>, who posted <a href="http://www.cnnr.me/b/2012/01/how-to-link-to-other-posts-in-octopress/">his own link post tutorial</a> a few weeks ago. I have since refined the code on my site beyond what we worked out together.</p>
+
+<p>The first thing to know is that Octopress will read anything you put into the YAML front matter of a post.[^2] Just add a new line with a colon and then that content is readable by the rest of your theme. Here’s my YAML front matter on a link post:</p>
+
+<h2 id="ruby-sample-yaml-front-matter">``` ruby Sample YAML Front Matter</h2>
+<p>layout: post
+title: “Extremely Smart and Incredibly Handsome”
+date: 2012-01-30 05:00
+comments: true
+categories: 
+- Nerdfest
+external-url: http://www.somewhereelse.com/whatever
+—
+```</p>
+
+<p>Notice the last line that says <code>external-url</code>. Now throughout the theme I can use <code>post.external-url</code> to let Octopress know what to do with any post that has that line in it. If you called that line <code>foo</code> then you would simply place <code>post.foo</code> throughout your theme.</p>
+
+<p>Now we need to dig into the theme to make use of that fancy new external URL line. First up is <code>/source/_includes/article.html</code>. This is the file that determines what your posts look like. Let’s change the header so that it links out to the <code>external-url</code> we just set <em>and</em> add a glyph to the end of it.</p>
+
+<p>``` html Top of article.html</p>
+<header>
+{% if index %}
+	{% if post.external-url %}<!-- This defines how Octopress will use posts with external-url. -->
+		<h1 class="entry-title"><a href="{{ post.external-url }}">{% if site.titlecase %}{{ post.title | titlecase }} YOUR GLYPH HERE{% else %}{{ post.title }}{% endif %}</a></h1>
+	 	{% else %}<!-- Now we're back to normal posts. Note the links used under href in both headers.-->
+	 	<h1 class="entry-title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
+		{% endif %}
+  	{% else %}
+	{% if page.external-url %}
+    <h1 class="entry-title"><a href="{{ page.external-url }}">{% if site.titlecase %}{{ page.title | titlecase }} YOUR GLYPH HERE{% else %}{{ page.title }}{% endif %}</a></h1>
+		{% else %}
+    <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+	{% endif %}
+{% endif %}
+```
+
+Octopress, which is based on Jekyll and the Liquid templating engine, makes quick work of turning just about anything from your YAML front matter into part of the theme. Once you tell the theme to treat links posts differently with `{% if post.external-url %}`, then all you have to do is define your link out with `<a href="{{ post.external-url }}">`. That's it. No scripting, no plugins. Just old-fashioned HTML. Neat.
+	
+We still need to add a permalink to the end of the post. Again, easy as pie. Let's just head back into `article.html` only this time we'll focus on the bottom portion. The following should be the last lines in your code. [^3] 
+
+``` html Bottom of Article.html
+{% if post.external-url %}
+	<div class="entry-content"></div>
+	<footer><a rel="full-article" href="{{ root_url }}{{ post.url }}">Permalink</a></footer>
+{% endif %}
+{% if page.external-url %}
+<footer><a rel="full-article" href="{{ root_url }}{{ post.url }}">Permalink</a>
+</footer>
+{% endif %}
+```
+
+Same idea, only now we're adding the permalink back to your site. This permalink appears both on the main list of posts and in the specific post page. I find this makes it easy for readers to find the direct URL no matter how they came to the page.
+
+Finally, we need to get the RSS feed to link out and have permalinks back to the original posts. To do this, we need to make a few edits to `/source/atom.xml`. This certainly freaked me out more than editing plain old HTML, but it's actually just as simple. Thanks to Octopress's handy `rake preview` command, it's easy enough to test your changes locally, even for the RSS feed. I test my site in Safari on a Mac, so I'm able to initiate the RSS feed in-browser.[^4]
+
+``` xml Changes to Atom.xml
+{% for post in site.posts limit: 20 %}
+<entry>
+  {% if post.external-url %}
+	<title type="html">&lt;![CDATA[{{ post.title | cdata_escape }} GLYPH GOES HERE]]&gt;</title><!-- add in a glyph or [link-post] here so people know where they're ending up -->
+	<link href="{{ post.external-url }}" />
+	{% else %}
+	<title type="html">&lt;![CDATA[{{ post.title | cdata_escape }}]]&gt;</title>
+	<link href="{{ site.url }}{{ post.url }}" />
+	{% endif%}
+  <updated>{{ post.date | date_to_xmlschema }}</updated>
+  <id>{{ site.url }}{{ post.id }}</id>
+  {% if post.external-url %}
+  <content type="html">&lt;![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}<a rel="full-article" href="{{ site.url }}{{ post.url }}">Permalink</a>]]&gt;</content><!-- add in a glyph or some way to denote that the permalink goes back to your site -->
+	{% else %}
+  <content type="html">&lt;![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]&gt;</content>
+	{% endif%}
+</entry>
+{% endfor %}
+```
+
+Again, it's just a matter of placing that `post.external-url` in the right place. I've been deploying this site like this for weeks without incident.
+
+I'm not really a coder, but I find that Octopress makes it pretty simple to implement any kind of customization. When I implemented a similar system on Wordpress it required installing a plugin (the excellent [DFLL Plugin](http://yjsoon.com/dfll-plugin)) and fiddling around with the site's theme. I found the process on Octopress decidedly more enjoyable. Instead of being at the mercy of plugins (which add bloat and an extra layer of management to your site) I was able to get this running with a basic understanding of HTML. Better, the ability to test the site locally allowed me to screw up over and over again until I got it right. And I think I finally did.
+
+So, did I leave any details out? Anything else you want to know about how this works? Ask me in the comments.
+
+[^1]: This is actually the opposite format that Gruber uses on his site, where link posts are the norm and original writing features an added glyph *before* the title, in his case a ★.
+
+[^2]: YAML front matter is just computer-nerd way of saying Metadata. All of the non-post information, like author, publish date, tags, etc. goes into the top of every posts. Octopress then parses that data when you publish.
+
+[^3]: These lines actually need to be followed by the code version of basically `else &gt; content &gt; endif`, but for some reason I'm having trouble embedding it here. [This Gist](https://gist.github.com/8dbe389dfe650042f8bd) should fill in the blanks. (Gist embedding actually isn't working either. I guess there are a few things to fix around here.)
+
+[^4]: If you use a feed re-broadcasting service such as Feedburner (like I do) don't worry, if the feed your site generates locally is spot on then it will get to Feedburner without issue.
+</a></header>
+]]></content>
+  </entry>
+  
+</feed>

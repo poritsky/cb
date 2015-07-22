@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Screenplay Markdown | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/screenplay-markdown/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Meet Fountain for Marked]]></title>
+    <link href="http://www.candlerblog.com/2012/02/08/fountain-for-marked/"/>
+    <updated>2012-02-08T16:30:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/02/08/fountain-for-marked</id>
+    <content type="html"><![CDATA[<p>I’m very excited to introduce you to the <a href="http://www.candlerblog.com/2011/12/08/screenplay-markdown-for-marked-is-here/">Screenplay Markdown for Marked’s</a> successor: Fountain for Marked. <a href="http://fountain.io/">Fountain</a> is the new name for Screenplay Markdown syntax. It combines Stu Maschwitz’s <a href="http://prolost.com/spmd">original ideas for SPMD</a> with a similar <a href="http://johnaugust.com/2012/introducing-fountain">ongoing project from filmmaker John August</a>. Both specs have now been unified into one open source project. As <a href="http://prolost.com/blog/2012/2/8/spmd-is-now-fountain.html">Stu put it earlier today</a>, “Fountain is everything SPMD was, now with the support of a respected industry pro with a track record of creating best-in-class apps for screenwriters.”</p>
+
+<p>Bookmark the new home of the plain text screenwriting, <a href="http://fountain.io">fountain.io</a>, for updates on new apps and changes to the syntax. Most of the latest version of Fountain is supported in Fountain for Marked with notable exceptions listed below. If you don’t have it already, go pick up a copy of Brett Terpstra’s <a href="http://markedapp.com">Marked</a> before following the installation instructions below.</p>
+
+<p>I have been involved with this project for a few months now. It has been an amazing experience watching Screenplay Markdown grow from an idea to an actual thing to a full-fledged project. This is still the very beginning of something big. Something John mentioned in his <a href="http://johnaugust.com/2012/introducing-fountain">introduction of Fountain</a> will really stick with me as I continue to contribute to the Fountain community:</p>
+
+<blockquote>
+  <p>Back when we announced FDX Reader, I got a lot of emails asking, “When are you going to make a screenwriting app?”</p>
+
+  <p>Answer: Today. My hope is that we just made a thousand. Fountain turns every text editor into a screenwriting app.</p>
+</blockquote>
+
+<p>All right, that’s enough chatter (for now). I’ll be writing a bit more about Fountain here soon, but why not just take it for a spin? Feel free to ask any questions in the comments or by <a href="http://www.candlerblog.com/contact">contacting me</a> directly. Happy writing.</p>
+
+<p><strong>UPDATED March 5, 2012: Fixed installation instructions and updated to newest version of screenplain.</strong></p>
+
+<h2 id="download--installation">Download &amp; Installation</h2>
+
+<ol>
+  <li>
+    <p>Download <a href="http://www.poritsky.com/thecandlerblog/wp-content/downloads/Fountain_Marked_1.0.1.zip">Fountain_Marked_1.0.1.zip</a>.</p>
+  </li>
+  <li>
+    <p>Install the files</p>
+
+    <ul>
+      <li>Double click the .zip file to extract its contents</li>
+      <li>Move <code>screenplain-marked</code> folder to <code>~/Library/Application Support/Marked</code></li>
+      <li>Move the Fountain.css file to <code>~/Library/Application Support/Marked/Custom CSS</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Launch Marked and open Preferences</p>
+  </li>
+  <li>
+    <p>In the <strong>Behavior</strong> panel, check the Custom Markdown Processor box and in the field below it, enter the path to <code>screenplain_marked.sh</code></p>
+
+    <ul>
+      <li>This will be the full (no ~) UNIX path, <code>/Users/&lt;username&gt;/Library/Application Support/Marked/screenplain-marked/screenplain_marked.sh</code></li>
+      <li>This shell script points to your installation of screenplain. By default it is set to <code>~/Library/Application Support/Marked/screenplain-marked/bin/screenplain</code>. If you place the complete <code>screenplain-marked</code> folder into <code>~/Library/Application Support/Marked</code> then you will not need to edit this script.</li>
+      <li>If the script is not working, you should open Terminal (located in <code>Applications/Utilities</code>) and make the file executable by typing <code>chmod a+x /path/to/screenplain_marked.sh </code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Go to the <strong>Style</strong> tab of Preferences</p>
+
+    <ul>
+      <li>Click the plus button (+) under the table to add a new custom style</li>
+      <li>In the file select dialog, navigate to <code>~/Library/Application Support/Marked/Custom CSS/Fountain.css</code> and add it</li>
+    </ul>
+  </li>
+  <li>
+    <p>Open a <a href="http://fountain.io">Fountain</a> document.</p>
+
+    <ul>
+      <li>The custom processor you entered should be on by default. It can be toggled per-document using the gear menu or ⌥⌘C.</li>
+      <li>Select the “Fountain” style from the Style selector in the bottom left.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="notes">Notes:</h4>
+
+<ul>
+  <li>This is a customized version of <a href="https://github.com/vilcans/screenplain/tree/master/screenplain">screenplain</a> by <a href="http://www.librador.com/">Martin Vilcans</a></li>
+  <li>The following Fountain syntax rules are currently unsupported but coming soon:
+    <ul>
+      <li>Title page</li>
+      <li>Some transition types</li>
+      <li>Notes</li>
+      <li>Boneyard</li>
+      <li>Page breaks</li>
+    </ul>
+  </li>
+  <li>It creates <code>h6</code> instead of <code>div</code> for “slug” types to allow for TOC navigation in Preview</li>
+  <li>Currently there are no export abilities for formats other than PDF/HTML</li>
+  <li>Pagination doesn’t work properly just yet. While you can print and export PDFs of your scripts, note that pages will not be numbered and may not accurately render (Characters may be on different pages than their dialogue, no “mores” or “continueds”, etc.). This may be fixed in future updates.</li>
+</ul>
+
+<h4 id="changelog">Changelog:</h4>
+
+<p>1.0.1 March 5, 2012</p>
+
+<ul>
+  <li>Added Sections and Synopses in line with the latest updates to screenplain.</li>
+  <li>Updated README to fix typos that lead to installation errors.</li>
+</ul>
+
+<p>1.0.0 February 8, 2012</p>
+
+<ul>
+  <li>Merged SPMD and Fountain syntaxes.</li>
+</ul>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rob Corddry: Fan of Screenplay Markdown]]></title>
+    <link href="http://www.candlerblog.com/2012/01/28/rob-corddry-spmd-fan/"/>
+    <updated>2012-01-28T17:17:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/01/28/rob-corddry-spmd-fan</id>
+    <content type="html"><![CDATA[<p>Meanwhile, at <a href="http://thenextweb.com/apple/2012/01/27/comedian-rob-corddry-talks-about-how-macs-helped-dig-him-out-of-a-creative-hole/">Macworld</a>:</p>
+
+<blockquote>
+  <p>Of much interest to Corddry was the fact that developer Brett Terpstra, Jonathan Poritsky, Stu Maschwitz and Martin Vilcans on bringing Stu’s Screenplay Markdown proposal to his popular Markdown editor Marked. Terpstra announced, in a quick back-and-forth with Corddry that they were also working on getting a Markdown exporter working for Final Draft.</p>
+</blockquote>
+
+<p>Well, now that’s exciting! I can’t say I’m surprised. It was Corddry who, <a href="http://www.candlerblog.com/2011/08/17/back-to-work-29/">in conversation with Merlin Mann</a>, said, “We are slaves to the worst piece of software ever created: Final Draft.”</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Screenplay Markdown Lives!]]></title>
+    <link href="http://www.candlerblog.com/2011/12/09/screenplay-markdown-lives/"/>
+    <updated>2011-12-09T07:25:03+00:00</updated>
+    <id>http://www.candlerblog.com/2011/12/09/screenplay-markdown-lives</id>
+    <content type="html"><![CDATA[<p>Stu’s SPMD <a href="http://prolost.com/spmdlives">update at Prolost</a>:</p>
+
+<blockquote>
+  <p>What something like this needs most is users, and I’m thrilled that we’re at that stage that you, the Prolost reader, could use SPMD for your creative work. We need the feedback to keep this project going.</p>
+</blockquote>
+
+<p>This really is only the beginning. Go <a href="http://www.candlerblog.com/2011/12/08/screenplay-markdown-for-marked- is-here/">get SPMD for Marked</a> and tell us what you think. Also:</p>
+
+<blockquote>
+  <p>I’m so inspired by this whole process—four guys who have never met in person collaborated on making something awesome, and now it works.</p>
+</blockquote>
+
+<blockquote>
+  <p>Are we done? Not even close.</p>
+</blockquote>
+
+<p>Ditto.</p>
+
+<p>See also Brett’s <a href="http://brettterpstra.com /calling-screenwriter-nerds/">Calling Screenwriter Nerds</a> and Martin’s <a href="http://www.librador.com/2011/12/09/SPMD-Screenplain-and-Marked/">SPMD, Screenplain and Marked</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Screenplay Markdown for Marked is Here]]></title>
+    <link href="http://www.candlerblog.com/2011/12/08/screenplay-markdown-for-marked-is-here/"/>
+    <updated>2011-12-08T16:12:38+00:00</updated>
+    <id>http://www.candlerblog.com/2011/12/08/screenplay-markdown-for-marked-is-here</id>
+    <content type="html"><![CDATA[<p>This is exciting. I’ve mentioned Stu Maschwitz’s Screenplay Markdown (SPMD) here a <a href="http://www.candlerblog.com/2011/08/16/i-hope-screenplay-markdown-kills-the-page-paradigm/">few</a> <a href="http://www.candlerblog.com/2011/08/17/screenbundle-the-plain-text-screenwriting-solution-you-can-use-right-now/">times</a> <a href="http://www.candlerblog.com/2011/12/06/the-writing-in-screenwriting/">before</a>. I’ve been smitten with the idea ever since he cooked it up in August. Thankfully, I’m not alone.</p>
+
+<p>About a month ago, I <a href="http://twitter.com/poritsky/statuses/132857242004357122">tweeted</a> asking if it would be possible to use Screenplay Markdown in Brett Terpstra’s excellent Markdown previewing app, <a href="http://markedapp.com/">Marked</a>. To my surprise, Brett <a href="http://twitter.theinfo.org/132857242004357122">responded</a> enthusiastically, then Stu got in touch as well. Before long we were all communicating, along with <a href="http://www.librador.com/">Martin Vilcans</a>, whose command line utility, <a href="https://github.com/vilcans/screenplain">Screenplain</a>, was the first to turn SPMD text files into formatted screenplays.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+
+<p>In order to learn a new syntax, it helps to have a way to preview your output so you know you’re properly formatting your document. It took me about a year to learn Markdown because I didn’t have an application as easy and robust as Marked to show me what my formatted writings scribblings look like.<!-- more --></p>
+
+<p>Markdown and SPMD aren’t that difficult to master, but once you do you realize how quickly you can get your thoughts out of your head and into a document, from anywhere. That’s the point. Marked makes it super simple to format your plain text document. Now Screenplay Markdown for Marked makes it as straightforward as possible to preview your formatted scripts.</p>
+
+<p>So what does it look like? On the left is a sample script in TextEdit. On the right is the same script in Marked.</p>
+
+<p><a href="http://www.poritsky.com/thecandlerblog/wp-content/uploads/2011/12/textedit-marked-sidexside.png"><img src="http://www.poritsky.com/thecandlerblog/wp-content/uploads/2011/12/textedit-marked-sidexside.png" alt="TextEdit Marked Side by Side" /></a></p>
+
+<p>Screenplay Markdown for Marked is still missing some features, but it will only get better from here. Stu, Martin and Brett have all been working hard to make this a great solution for writing screenplays. This is feels like the beginning of a wider SPMD project. We value your input and feedback, so please leave comments here or on Twitter (or wherever) to let us know how you like using SPMD for Marked.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> Installation instructions are below and on the <a href="http://support.markedapp.com/kb/how-to-tips-and-tricks /using-screenplay-markdown-with-marked">Marked support site</a>. Go get <a href="http://markedapp.com/">Marked</a>, the SPMD package below and your favorite text editor and write something already.</p>
+
+<p><strong>UPDATE 02/08/2012:</strong> Screenplay Markdown for Marked is now Fountain for Marked. Please <a href="http://www.candlerblog.com/2012/02/08/fountain-for-marked">visit the updated page</a> for more information.</p>
+
+<h2 id="deldownload--installation"><del>Download &amp; Installation</del></h2>
+
+<ol>
+  <li>
+    <p><del>Download <a href="http://www.poritsky.com/thecandlerblog/wp-content/plugins/download-monitor/download.php?id=SPMD_Marked.1.0.zip">SPMD_Marked.1.0.zip</a>.</del></p>
+  </li>
+  <li>
+    <p><del>Install the files</del></p>
+
+    <ul>
+      <li><del>Double click the .zip file to extract its contents</del></li>
+      <li><del>Move <code>marked-screenplain</code> folder to a folder of your choice
+</del>        <ul>
+          <li><del>Suggestions: Your home folder, <code>/usr/local/bin</code>, <code>~/Library/Application Support/Marked</code></del></li>
+          <li><del>Move the Screenplay.css file to <code>~/Library/Application Support/Marked/Custom CSS/</code></del></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><del>Launch Marked and open Preferences</del></p>
+  </li>
+  <li>
+    <p><del>In the <strong>Behavior</strong> panel, check the Custom Markdown Processor box and in the field below it, enter the path to screenplain_marked</del></p>
+
+    <ul>
+      <li><del>This will be the full (no ~) UNIX path. If you put it in <code>/usr/local/bin/</code> it would be <code>/usr/local/bin/marked-screenplain/bin/screenplain</code>.</del></li>
+      <li><del>If you put it in your users’s home folder, it would be: <code>/Users//marked-screenplain/bin/screenplain</code></del></li>
+    </ul>
+  </li>
+  <li>
+    <p><del>Go to the <strong>Style</strong> tab of Preferences</del></p>
+
+    <ul>
+      <li><del>Click the plus button (+) under the table to add a new custom style</del></li>
+      <li><del>In the file select dialog, navigate to <code>~/Library/Application Support/Marked/Custom CSS/Screenplay Markdown.css</code> and add it</del></li>
+    </ul>
+  </li>
+  <li>
+    <p><del>Open a <a href="http://prolost.com/storage/downloads/spmd/SPMD_proposal.html">Screenplay Markdown</a> document.</del></p>
+
+    <ul>
+      <li><del>The custom processor you entered should be on by default. It can be toggled per-document using the gear menu or ⌥⌘C.</del></li>
+      <li><del>Select the “Screenplay Markdown” style from the Style selector in the bottom left.</del></li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="delnotes"><del>Notes:</del></h4>
+
+<ul>
+  <li><del>This is a customized version of <a href="https://github.com/vilcans/screenplain/tree/master/screenplain">screenplain</a> by <a href="http://www.librador.com/">Martin Vilcans</a></del></li>
+  <li><del>It creates <code>h2</code> instead of <code>div</code> for “slug” types to allow for TOC navigation in Preview (hover over the upper right edge of the preview)</del></li>
+  <li><del>Currently there are no export abilities for formats other than PDF/HTML</del></li>
+  <li><del>Pagination doesn’t work properly just yet. While you can print and export PDFs of your scripts, note that pages will not be numbered and may not accurately render (Characters may be on different pages than their dialogue, no “mores” or “continueds”, etc.). This may be fixed in future updates.</del></li>
+</ul>
+
+<h2 id="delicon"><del>Icon</del></h2>
+
+<p><del>Check out this awesome SPMD for Marked icon Brett made. <a href="http://www.poritsky.com/thecandlerblog/wp-content/downloads/MarkedSPMDIcon.png">Download</a> and enjoy.</del></p>
+
+<p><img src="http://www.poritsky.com/thecandlerblog/wp-content/uploads/2011/12/MarkedSPMDIcon.png" alt="" /></p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>The <a href="http://screenplain.appspot.com/">Screenplain web app</a> can even quickly create FDX files from your SPMD scripts. It’s pretty awesome.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Or don’t like, but be nice.<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Marked as CSS Playground - the candler blog</title>
+  <meta name="author" content="Jonathan Poritsky">
+
+  
+  <meta name="description" content="The other day, I sat down to write but nothing was coming. I loaded up my document in Marked, Brett Terpstra&rsquo;s excellent Markdown live preview &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.candlerblog.com/2012/02/29/marked-as-css-playground/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feedpress.me/candlerblog" rel="alternate" title="the candler blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<script type="text/javascript" src="//use.typekit.net/agp6cdf.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/styleTweets.js"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4886664-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+  <script type="text/javascript">
+  (function(){
+    var fusion = document.createElement('script');
+    fusion.src = window.location.protocol + '//adn.fusionads.net/api/1.0/ad.js?zoneid=252&rand=' + Math.floor(Math.random()*9999999);
+    fusion.async = true;
+    (document.head || document.getElementsByTagName('head')[0]).appendChild(fusion);
+  })();</script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">the candler blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feedpress.me/candlerblog" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://next.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="candlerblog.com" />
+    <input type="hidden" name="kj" value="#D45949"/>
+    <input type="hidden" name="kf" value="-1"/>
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/projects">Projects</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="beforearticle">
+<article class="hentry" role="article">
+  
+  <header>
+    
+  
+      <h1 class="entry-title">Marked as CSS Playground</h1>
+    
+    
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-29T22:11:00+00:00" pubdate data-updated="true">February 29<span>th</span>, 2012</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/technology/'>Technology</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+<div class="entry-content"><p><img class="center" src="/images/2012/02/paper-css.jpg" title="Paper Jokes" /></p>
+
+<p>The other day, I sat down to write but nothing was coming. I loaded up my document in <a href="http://markedapp.com/">Marked</a>, Brett Terpstra&rsquo;s excellent Markdown live preview (and so much more) app. As I flipped through my collection of custom stylesheets to preview the paltry paragraph with, I decided I wanted something a little different. So I fired up TextMate and started whipping up a new design.</p>
+
+<p>HTML and CSS, by their nature, have to be released out in the open. Want to know how someone made a site you like? Well, the source code is right there if you know where to look. As a result, the Internet is littered with snippets of code shared by many the kind-hearted souls in the design community.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+
+<p>I don&rsquo;t like HTML all that much. It has been a long slog from my first Web site (um, 15 years ago?) to my current level of head-above-water-ness. I do, however, <em>love</em> to tinker with CSS. That&rsquo;s where the real fun happens. Marked outputs some solid HTML5, much better than what I&rsquo;d start off with from scratch. Since it&rsquo;s based on Webkit (i.e. Safari) there are a bevy of CSS3 tricks you can throw at it.</p>
+
+<p>One feature that has become indispensable as I help write the custom CSS for <a href="http://candlerblog.com/2012/02/08/fountain-for-marked/">Fountain for Marked</a> is the ability to track CSS changes. If you&rsquo;re using a Custom stylesheet in Marked, you can edit the CSS and the changes will refresh every time you hit save. Change the color of an element, save it, and, boom, there it is in Marked.</p>
+
+<p>Now, back to me, trying to write but getting sidetracked writing a custom preview for Marked. I wanted to create a theme based on an early (ultimately foolhardy) Screenplay Markdown stylesheet that made the script look like a piece of paper. I figured I could throw it together in a new sheet pretty quickly.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p>
+
+<p>I modified the custom sheet that comes with Marked and felt pretty good, but something was missing. So I did a little wandering around the web and found some neat CSS tricks that I wanted to try out but never had the chance to. </p>
+
+<p>Everything I have ever learned about CSS I have learned by messing with code. There are so many creative folks out there coming up with new and interesting ways to use stylesheets<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> that it rarely seems worth waiting for a full-on project to play with the weirdest and wildest bits of code. I&rsquo;m loving just throwing CSS at Marked (like these <a href="http://lea.verou.me/css3patterns/">beautiful patterns</a>), breaking it and figuring out how to tame it.</p>
+
+<p>That&rsquo;s why Marked, besides being a great Markdown preview app, is also a great CSS playground, a place where you can go nuts and make a mess without any consequences. I don&rsquo;t have to track my changes or worry about breaking the way something works elsewhere on the site; I can just have fun and take the code for a spin. Hopefully, when I actually decide to work on a new design, my bag of tricks will have expanded.</p>
+
+<p>Oh, and that custom stylesheet I decided to work on the other day is featured in the image at the top of this article. You can <a href="http://cl.ly/3a0j1K1k2H2R2u1Q1K2s">go grab it here</a>. Happy writing, if you ever get to it.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>See, for example <a href="http://cssdeck.com/">CSSDeck</a>.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>I tend to approach CSS with an idea in mind, challenging myself to get it done in no time flat and finding myself still tinkering hours later, hungry and disoriented. Doesn&rsquo;t everyone?<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>I&rsquo;m looking at you, <a href="http://cssdeck.com/item/184/homer-simpson-rendered-in-css3">CSS Homer Simpson</a>.<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+  <footer>
+    <!--<p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jonathan Poritsky</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-29T22:11:00+00:00" pubdate data-updated="true">February 29<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/technology/'>Technology</a>
+  
+</span>
+
+
+    </p>-->
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2012/02/28/wal-mart-ultraviolet/" title="Previous Post: Wal-Mart to Give Hollywood a Hand">&laquo; Wal-Mart to Give Hollywood a Hand</a>
+      
+      
+        <a class="basic-alignment right" href="/2012/03/01/readability/" title="Next Post: Readability, Instapaper and Reading on iOS">Readability, Instapaper and Reading on iOS &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+<p class=about-aside>The candler blog is a film theory and criticism (and other stuff) Web site by Jonathan Poritsky. You&#8217;re on it right now. Check out the <a href="http://feedpress.me/candlerblog">RSS</a> and <a href="https://twitter.com/thecandlerblog">Twitter</a> feeds to stay up to date. Now on App.net too: <a href='https://alpha.app.net/thecandlerblog' rel='me'><i class="icon-adn"></i></a></p>
+</section><section>
+  
+<p><form action="https://next.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="candlerblog.com" />
+    <input type="hidden" name="kj" value="#D45949"/>
+    <input type="hidden" name="kf" value="-1"/>
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form></p>
+  
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Jonathan Poritsky -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'candlerblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.candlerblog.com/2012/02/29/marked-as-css-playground/';
+        var disqus_url = 'http://www.candlerblog.com/2012/02/29/marked-as-css-playground/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

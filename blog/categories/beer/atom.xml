@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Beer | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/beer/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Craft Beer Line-Ups at All 30 MLB Stadiums]]></title>
+    <link href="http://www.candlerblog.com/2015/04/17/baseball-brews/"/>
+    <updated>2015-04-17T16:14:00+00:00</updated>
+    <id>http://www.candlerblog.com/2015/04/17/baseball-brews</id>
+    <content type="html"><![CDATA[<p>Khushbu Shah and Cynthia Correa have done yeoman’s work <a href="http://www.eater.com/2015/4/16/8340045/baseball-stadium-craft-beer-guide">over at Eater</a>:</p>
+
+<blockquote>
+  <p>Nothing pairs better with <a href="http://www.eater.com/2015/3/31/8320083/baseball-stadium-food-smores-bacon-stick-fried-chicken-cones-hot-dogs">crazy, over-the-top stadium snacks</a> than an ice-cold beer while watching baseball on a hot summer day. Luckily, fans are no longer stuck forking over an arm and a leg for awful, run-of-the-mill beers. Instead, many stadiums have stepped up their craft beer line-ups, and are often sourcing brews from local breweries.</p>
+</blockquote>
+
+<p>Philadelphia needs to up its game.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> I went to a game at the Twins’s Target Field last year and enjoyed quite a few local brews. Shocked to see they have more on offer than Colorado’s Coors Field.</p>
+
+<p>Anyway, play ball and drink up.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Both in beer and in actually, you know, hitting and pitching.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+</feed>

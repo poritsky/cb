@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Screenbundle: The Plain Text Screenwriting Solution You Can Use Right Now - the candler blog</title>
+  <meta name="author" content="Jonathan Poritsky">
+
+  
+  <meta name="description" content="As Stu Maschwitz’s readers pointed out, there are a few options available currently that allow for screenplay formatting in a plain text document &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.candlerblog.com/2011/08/17/screenbundle-the-plain-text-screenwriting-solution-you-can-use-right-now/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feedpress.me/candlerblog" rel="alternate" title="the candler blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<script type="text/javascript" src="//use.typekit.net/agp6cdf.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/styleTweets.js"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4886664-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+  <script type="text/javascript">
+  (function(){
+    var fusion = document.createElement('script');
+    fusion.src = window.location.protocol + '//adn.fusionads.net/api/1.0/ad.js?zoneid=252&rand=' + Math.floor(Math.random()*9999999);
+    fusion.async = true;
+    (document.head || document.getElementsByTagName('head')[0]).appendChild(fusion);
+  })();</script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">the candler blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feedpress.me/candlerblog" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://next.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="candlerblog.com" />
+    <input type="hidden" name="kj" value="#D45949"/>
+    <input type="hidden" name="kf" value="-1"/>
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/projects">Projects</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="beforearticle">
+<article class="hentry" role="article">
+  
+  <header>
+    
+  
+      <h1 class="entry-title">Screenbundle: The Plain Text Screenwriting Solution You Can Use Right Now</h1>
+    
+    
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-08-17T21:20:40+00:00" pubdate data-updated="true">August 17<span>th</span>, 2011</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/filmmaking/'>Filmmaking</a>, <a class='category' href='/blog/categories/technology/'>technology</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+<div class="entry-content"><p>As Stu Maschwitz’s <a href="http://prolost.com/blog/2011/8/9/screenplay-markdown.html">readers pointed out</a>, there are a few options available currently that allow for screenplay formatting in a plain text document similar to his <a href="http://prolost.com/storage/downloads/spmd/SPMD_proposal.html">Screenplay Markdown proposal</a>. One of these is <a href="http://code.google.com/p/screenbundle/">Screenbundle</a>, a TextMate add-on that formats text documents for screenwriting. Stu, however, expresses reservations about this kind of a solution:</p>
+
+<blockquote>
+  <p>All seem to behave like Final Draft in interpreting plain text into a screenplay format. Which is nice, but it’s a one-way street. I’m thinking there might be a place for a plaintext screenplay format with markdown-like syntax, and a WYSIWYG desktop app that works with that format as easily as FDX.</p>
+</blockquote>
+
+<p>If you ask me, Screenbundle loaded into TextMate isn’t as much of a one way street as Stu lets on. I’d like to do a quick primer on it and show you why I think it’s a great solution that you can dive into right now.</p>
+
+<h2 id="get-your-geek-on">Get Your Geek On</h2>
+
+<p>Pick up your thick-rimmed goggles and leave your Neo-Luddism at the door, it’s time to do some nerdy work. First off, we need to get TextMate and Screenbundle up and running smoothly enough for a non-programmer to enjoy it.</p>
+
+<ol>
+  <li>Download and install <a href="http://macromates.com/">TextMate</a>.</li>
+  <li>Download the newest version of Screenbundle <a href="http://code.google.com/p/screenbundle/downloads/detail?name=screenbundle-314.zip">here</a>.</li>
+  <li>Unzip the file, which will reveal “Screenwriting.tmbundle”.</li>
+  <li>Double click Screenwriting.tmbundle</li>
+  <li>TextMate will launch or activate and Screenbundle will be installed.</li>
+</ol>
+
+<p>Now that was easy. So what’s a bundle?</p>
+
+<p>In TextMate, bundles are basically sets of rules that apply to specific document types. For example, the HTML bundle features code snippets, syntax highlighting rules and preview windows previews that apply only to HTML documents. You can find all of the installed bundles, including your newly minted copy of Screenbundle, under the Bundles menu. Screenbundle appears there as “Screenwriting”.</p>
+
+<h2 id="just-start">Just Start</h2>
+
+<p>Now that we have everything set up, let’s start a script. Open a new, blank TextMate document. By default, new documents are plain text, but we want to change the language of the document. To do this, simply look to the bottom of your window and find the drop-down menu that has an L (for language!) and the words Plain Text.</p>
+
+<p><img src="http://www.poritsky.com/thecandlerblog/wp-content/uploads/2011/08/tm-bottom-shadow.png" alt="TextMate Bottom Bar" /></p>
+
+<p>Click it, and up will come all of your languages options. Select “Screenplay”. Nothing should change in the document; what you’ve done is told TextMate to recognize screenwriting syntax. From there, you can start to do write a screenplay like you’re probably already used to.</p>
+
+<p>Your first line is going to be a slugline, or a scene heading. “int. house - night” should be good enough. Hit return and voila, the line flips to all caps and changes color. Next up is action text, which you type like normal paragraphs. Hitting tab on a new line after action or slug moves the cursor 4 tab spaces over for your character line. Hit return again and you’re set for dialogue, which is 2 tabs. Ending a scene is equally simple, just type “cut to:” or “fade to:” on a new line and hit return. That line will be moved across the screen and TextMate will be ready for a new scene.</p>
+
+<p>Some of the niceties of Final Draft and other apps are still present. Screenbundle is able to remember characters and locations. Start up a conversation between two characters and it can auto-fill names back and forth. Every scene you write will now be listed in a drop-down on the bottom bar of your TextMate window. Click on a scene’s slugline and your cursor will jump to it in the document. All of this is happening in a plain text document with no markup.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+
+<h2 id="on-the-road">On the Road</h2>
+
+<p>One of the most valuable bits of Screenbundle’s documentation is its explanation of what’s going on behind the scenes. To me, this is reminiscent of learning how to bang out a screenplay on a typewriter[^2]; useful in a pinch and fun to keep in the memory banks. For screenbundle, it’s all about the tab key. I’ll shorten the basic syntax:</p>
+
+<p>Any text editor on any platform with a tab key can now work in this screenplay format. I’m a fan of iOS, where there are many (many, many) text editing options. My preferred text editor of late is <a href="http://www.candlerblog.com/2011/06/02/daedalus-touch-brings-beautiful-text-editing-to-the-ipad/">Daedalus Touch</a>, which luckily just added a tab key to its extended keyboard. Other options are WriteRoom and Nebulous Notes. I recommend beginning your scripts in TextMate first, at least when out with Screenbundle. That way you’ll have at least a visual reference as to where your tabs should land.</p>
+
+<p>My preferred iOS text editor of late is <a href="http://www.candlerblog.com/2011/06/02/daedalus-touch-brings-beautiful-text-editing-to-the-ipad/">Daedalus Touch</a>, which luckily just added a tab key to its extended keyboard. Other options are WriteRoom and Nebulous Notes. I recommend beginning your scripts in TextMate first, at least when out with Screenbundle. That way you’ll have at least a visual reference as to where your tabs should land.</p>
+
+<p>Screenbundle’s documentation includes a guide to using the tab key on your text documents. Here’s what it basically comes down to:</p>
+
+<ul>
+  <li>Slugline: Begins with “INT.”, “EXT.”, “I/E.” OR consists of all capitol letters.</li>
+  <li>Action: Any line that doesn’t start with a tab and is not a Slugline or Left-Transition.</li>
+  <li>Characters: 4 tabs.</li>
+  <li>Parenthetical: 3 tabs and begins &amp; ends with parenthesis.</li>
+  <li>Dialogue: 2 tabs.</li>
+  <li>Transitions: 10 tabs. This isn’t as fast as typing straight into TextMate, but it’s a start.</li>
+</ul>
+
+<h2 id="output-and-delivery">Output and Delivery</h2>
+
+<p>Eventually, you’re going to have to get your screenplay to look like a standard screenplay. From within TextMate you can load a very good looking screenplay preview. Here’s a screen grab of the first page of <em>The Social Network</em> in a TextMate with a preview window loaded next to it. Click them for a closer look.</p>
+
+<p><a href="http://www.poritsky.com/thecandlerblog/wp-content/uploads/2011/08/social-network-grab-shadow.png"><img src="http://www.poritsky.com/thecandlerblog/wp-content/uploads/2011/08/social-network-grab-shadow-246x300.png" alt="Screenbundle Social Network" /></a><a href="http://www.poritsky.com/thecandlerblog/wp-content/uploads/2011/08/social-network-preview-grab-shadow.png"><img src="http://www.poritsky.com/thecandlerblog/wp-content/uploads/2011/08/social-network-preview-grab-shadow-246x300.png" alt="Screenbundle Social Network Preview" /></a></p>
+
+<p>This forces you to treat writing and proof-reading as two separate tasks. Final Draft and other applications adhere to the page paradigm (which <a href="http://www.candlerblog.com/2011/08/16/i-hope-screenplay-markdown-kills-the-page-paradigm/">I’m not so fond of</a>) by keeping you aware of the current page the whole time. You are working on something that looks like a finished product. The creative process is a bit kludgier than that. Sometimes it helps to make a mess.</p>
+
+<p>Luckily, if you do want to know what page you are on, Screenbundle has a handy counter that will tell you the current page based on where you are in your document. I like that you can check the current page instead of being made aware of it constantly by the application.</p>
+
+<p>The best way to get your script ready for delivery, in my opinion, is to bring it into Final Draft, which can open .txt files and convert them to script formatting. Screenbundle allows you to send the current script in Final Draft, but only to Final Draft 7. There is a way to modify the code to allow it to open in Final Draft 8, but the easiest method is to simply save the script as a .txt file and open it in FD.</p>
+
+<p>The other option is to make a PDF straight out of TextMate, which is only sort of possible. To do this you’ll need an install of <a href="http://www.princexml.com/">Prince</a>. The bad problem is that not only is Prince a somewhat advanced install, but the free version of it puts a watermark in the corner of every page. To remove it, you need to purchase a Prince license, which is $500, not even close to feasible.</p>
+
+<h2 id="versus">Versus</h2>
+
+<p>You might be asking at this point “Why would I use Screenbundle instead of Final Draft?” The real answer is that in order to have a complete screenplay workflow, you’re going to need a copy of Final Draft, no matter what application you want to write in. Unfortunately, it’s still an industry standard, so if you’re passing scripts around, you can’t go without it. Besides, Final Draft is a killer editing and organization application. For writing, it’s not always the best choice.</p>
+
+<p>That’s where Screenbundle comes in. It makes the process of creating new work that much simpler by making it usable on more devices. Plus, part of the fun of TextMate is that you can tweak it to your hearts content. You can change the colors of text highlights, pick whatever font you like<sup id="fnref:3"><a href="#fn:3" rel="footnote">2</a></sup> and do about a million other geeky things<sup id="fnref:4"><a href="#fn:4" rel="footnote">3</a></sup>. It sounds like things are advancing on Screenplay Markdown, but until someone implements the new syntax in an actual application, Screenbundle provides a great plain text script writing experience that is available now.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Screenbundle’s creator, Oliver Taylor, has provided excellent documentation on how to use it. You can access it from within TextMate by choosing menu item Bundles→Screenwriting→Help.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>I prefer <a href="http://en.wikipedia.org/wiki/Consolas">Consolas</a> or its free cousin, <a href="http://www.levien.com/type/myfonts/inconsolata.html">Inconsolata</a>.<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>Like, say, build a Screenplay Markdown parser.<a href="#fnref:4" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+  <footer>
+    <!--<p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Joanthan Poritsky</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-08-17T21:20:40+00:00" pubdate data-updated="true">August 17<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/filmmaking/'>Filmmaking</a>, <a class='category' href='/blog/categories/technology/'>technology</a>
+  
+</span>
+
+
+    </p>-->
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2011/08/17/back-to-work-29/" title="Previous Post: Back to Work #29">&laquo; Back to Work #29</a>
+      
+      
+        <a class="basic-alignment right" href="/2011/08/18/people-arent-streaming-as-much-as-you-think-supposedly/" title="Next Post: People Aren't Streaming As Much As You Think, Supposedly">People Aren't Streaming As Much As You Think, Supposedly &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+<p class=about-aside>The candler blog is a film theory and criticism (and other stuff) Web site by Jonathan Poritsky. You&#8217;re on it right now. Check out the <a href="http://feedpress.me/candlerblog">RSS</a> and <a href="https://twitter.com/thecandlerblog">Twitter</a> feeds to stay up to date. Now on App.net too: <a href='https://alpha.app.net/thecandlerblog' rel='me'><i class="icon-adn"></i></a></p>
+</section><section>
+  
+<p><form action="https://next.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="candlerblog.com" />
+    <input type="hidden" name="kj" value="#D45949"/>
+    <input type="hidden" name="kf" value="-1"/>
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form></p>
+  
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Jonathan Poritsky -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'candlerblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.candlerblog.com/2011/08/17/screenbundle-the-plain-text-screenwriting-solution-you-can-use-right-now/';
+        var disqus_url = 'http://www.candlerblog.com/2011/08/17/screenbundle-the-plain-text-screenwriting-solution-you-can-use-right-now/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

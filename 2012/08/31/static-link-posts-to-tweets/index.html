@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Syndicating Link Posts From a Static Blog to Twitter Without...Well, Let Me Explain - the candler blog</title>
+  <meta name="author" content="Jonathan Poritsky">
+
+  
+  <meta name="description" content="A few weeks ago I started syndicating all of the posts from the candler blog to a new Twitter account, @thecandlerblog. Since I’m off Wordpress and &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.candlerblog.com/2012/08/31/static-link-posts-to-tweets/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feedpress.me/candlerblog" rel="alternate" title="the candler blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<script type="text/javascript" src="//use.typekit.net/agp6cdf.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/styleTweets.js"></script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4886664-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+  <script type="text/javascript">
+  (function(){
+    var fusion = document.createElement('script');
+    fusion.src = window.location.protocol + '//adn.fusionads.net/api/1.0/ad.js?zoneid=252&rand=' + Math.floor(Math.random()*9999999);
+    fusion.async = true;
+    (document.head || document.getElementsByTagName('head')[0]).appendChild(fusion);
+  })();</script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">the candler blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feedpress.me/candlerblog" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://next.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="candlerblog.com" />
+    <input type="hidden" name="kj" value="#D45949"/>
+    <input type="hidden" name="kf" value="-1"/>
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/projects">Projects</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="beforearticle">
+<article class="hentry" role="article">
+  
+  <header>
+    
+  
+      <h1 class="entry-title">Syndicating Link Posts From a Static Blog to Twitter Without...Well, Let Me Explain</h1>
+    
+    
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-31T16:56:00+00:00" pubdate data-updated="true">August 31<span>st</span>, 2012</time>&emsp;
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/blogging/'>Blogging</a>, <a class='category' href='/blog/categories/technology/'>Technology</a>
+  
+</span>
+
+
+      
+    </p>
+  </header>
+
+
+<div class="entry-content"><p>A few weeks ago I started syndicating all of the posts from the candler blog to a new Twitter account, <a href="http://twitter.com/thecandlerblog">@thecandlerblog</a>. Since I’m off Wordpress and thus can’t use a fancy-pants plugin to achieve this, I decided to use an <a href="https://ifttt.com">If This Then That (IFTTT)</a> recipe to take my site’s RSS feed and send out a tweet on the new account. Easy!</p>
+
+<p>Not so fast. I ran into a bit of a problem that I figured was edge case-y enough that I didn’t need to bother you all with the nerdy details of how I fixed it. But Doug Stephen just <a href="http://canadian-fury.com/2012/08/31/an-absolutely-ridiculous-hack-to-syndicate-octopress-to-twitter-via-ifttt-with-support-for-linklog-posts/">posted his own hack</a> to solve the exact same issue, so I figure it’s time for me to share the sauce (really, it’s very boring sauce) on how I got it up and running.</p>
+
+<h3 id="the-problem">The Problem</h3>
+
+<p>There are two kinds of posts on the candler blog: Normal, long-ish blog posts like the one you’re reading right now, and link posts,<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> which are shorter and feature a headline that links out to a different site. I love writing link posts, and I encourage readers to go check out the sites I’m linking to. I’m only too happy to have readers subscribe to <a href="http://feeds.feedburner.com/thecandlerblog">my RSS feed</a> and experience the site through a feed reader.</p>
+
+<p>However, this setup doesn’t quite work on Twitter. All I want posted to the site’s official feed is the post title and the URL back to the candler blog. Why? Because I believe the full experience of what I’m trying to do here comes from the headline I choose, the sites I link to and the commentary I write.</p>
+
+<p>The IFTTT RSS to Twitter recipe can only syndicate the post’s title and the URL it points to. In the case of link posts, all you will see is a headline and a link to some other site. That would be all well and good except it basically diminishes the whole experience of reading the candler blog. There will be no context for the link. Or the headline. So that wouldn’t do.</p>
+
+<h3 id="the-fix">The Fix</h3>
+
+<p>Enter <a href="http://pipes.yahoo.com/">Yahoo! Pipes</a>. If you’ve never played with Pipes before, I highly recommend taking it for a spin. I barely know the full potential of the tool, but I do know this: it allows you to take any RSS feed, even multiple feeds, and rewire them to your liking. Want to mash some feeds together? What to get a new feed featuring only the work of a single author? How about only tagged with things you are interested in? It’ll do all of that and more. And it allows me to reconfigure my site’s feed to change the destination of link post URLs back to the candler blog. Here’s a quick look at what my pipe looks like:</p>
+
+<p><img class="center" src="/images/2012/08/pipe.jpg" title="My Link Fixing Pipe" /></p>
+
+<p>The first little window you see is simply there to fetch my site’s RSS feed. All that needs doing there is to plug in the Feedburner URL of my feed. Easy.</p>
+
+<p>The next window is where all of the magic happens. The Create RSS module (under “Operators” in pipes) allows you to do the rerouting of feed level items. In short, it gives you a blank slate of an RSS feed, and then allows you to plug in whatever data from your feed you want. In my case, every part of the feed should remain the same except for the Link section. Items like title and description are all available from a drop down in the RSS creator module. All I needed to find was which operator to plug into the link level to tell pipes to use each post’s permalink as its title link.</p>
+
+<p>Following?</p>
+
+<p>Along the bottom of the pipes interface is a handy little tool that displays whatever your feed looks like on the selected module. To find the permalink in the feed, I selected the Fetch Feed module (the one at the top) and started digging through the feed output? Here’s what it looks like:</p>
+
+<p><img class="center" src="/images/2012/08/pipe-display.jpg" title="Pipe Output Display" /></p>
+
+<p>The permalink pointing to my site is, luckily, easy enough to find under <code>guid &gt; content</code>. Simply type <code>item.guid.content</code> into the Create RSS line for Link and connect it to the pipe output. Now, instead of the external link, the RSS headline will be point to the original candler blog post.</p>
+
+<p>Save the pipe, then from the “My Pipes” page, grab the new RSS feed. Go back to IFTTT and create a recipe using the pipe RSS feed. Boom. A convoluted workaround to account for link posts.</p>
+
+<h3 id="almost-done">Almost Done</h3>
+
+<p>All this automation is well and good, but sometimes I like to push it along. For that, I have a few handy bookmarks in a folder that I click after posting.</p>
+
+<p>First off is pinging my feed. Feedburner is <em>supposed</em> to ping your site every 30 minutes, but, you know, Feedburner sucks. Luckily, they have a <a href="http://feedburner.google.com/fb/a/ping">manual pinging page</a> where you can enter your feed and ping away. The URL of the page that returns when you do this is actually all you need to set off a manual ping, so after you do it manually, just drag the page to your bookmarks bar and save it. The URL should look like this:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">http://feedburner.google.com/fb/a/pingSubmit?bloglink=http%3A%2F%2Ffeeds.feedburner.com%2F[your-feed-name-here]
+</span><span class="line">// Sans brackets, of course. //</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Next, I like to check on my pipe and make sure it refreshed. To do that, I simply saved the direct URL to my pipe as a bookmark. After I ping Feedburner, I go and check that the pipe received the update. If it hasn’t, no worries, it picks it up quickly enough.</p>
+
+<p>Finally, I keep a bookmark handy that points directly to the IFTTT page for the Twitter posting recipe. I tried saving IFTTT’s built in <code>force-run</code> URL scheme, but I have been unable to actuate it from the Bookmarks Bar. Visiting it simply takes me back to my recipe page. If I really want a tweet to go out right away, I go to the IFTTT page for the recipe and click “Check Now.” I’ve stopped doing this unless I plan to post more than one post in the space of 15 minutes, IFTTT’s automated (and quite reliable) refresh time.</p>
+
+<h3 id="go-forth-and-post">Go Forth and Post</h3>
+
+<p>If I had to guess, I’d say it took me about 15 times as long to write this blog post as it did to set up this Pipe and IFTTT recipe. Both tools work incredibly well together. Pipes is powerful for taking any number of RSS feeds and turning them into the content that you want, and IFTTT allows you to do all kinds of wacky stuff with an RSS feed. And now that I’ve set it up I rarely think about it, so I’m glad I did.</p>
+
+<p>This system works well for me on Octopress, but I assume that it works similarly for any static blogging system. Your mileage may vary, but I’d love to hear what blogging engines this works on and which ones it breaks. And if you have ideas on how to finesse this, please do share.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Or Linked List posts or Linklogs or Linkblogs, pick your poison.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+  <footer>
+    <!--<p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jonathan Poritsky</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-31T16:56:00+00:00" pubdate data-updated="true">August 31<span>st</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/blogging/'>Blogging</a>, <a class='category' href='/blog/categories/technology/'>Technology</a>
+  
+</span>
+
+
+    </p>-->
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2012/08/31/backlot-double-digits/" title="Previous Post: The Backlot Episode 10: Double Digits">&laquo; The Backlot Episode 10: Double Digits</a>
+      
+      
+        <a class="basic-alignment right" href="/2012/08/31/nyfa-acting-sponsor/" title="Next Post: New York Film Academy [Sponsor]">New York Film Academy [Sponsor] &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+<p class=about-aside>The candler blog is a film theory and criticism (and other stuff) Web site by Jonathan Poritsky. You&#8217;re on it right now. Check out the <a href="http://feedpress.me/candlerblog">RSS</a> and <a href="https://twitter.com/thecandlerblog">Twitter</a> feeds to stay up to date. Now on App.net too: <a href='https://alpha.app.net/thecandlerblog' rel='me'><i class="icon-adn"></i></a></p>
+</section><section>
+  
+<p><form action="https://next.duckduckgo.com/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="candlerblog.com" />
+    <input type="hidden" name="kj" value="#D45949"/>
+    <input type="hidden" name="kf" value="-1"/>
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form></p>
+  
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Jonathan Poritsky -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'candlerblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.candlerblog.com/2012/08/31/static-link-posts-to-tweets/';
+        var disqus_url = 'http://www.candlerblog.com/2012/08/31/static-link-posts-to-tweets/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

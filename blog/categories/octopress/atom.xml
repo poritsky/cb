@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Some AppleScript and TextExpander Goodies for Octopress]]></title>
+    <link href="http://www.candlerblog.com/2012/10/10/textexpander-applescript-and-octopress/"/>
+    <updated>2012-10-10T12:08:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/10/10/textexpander-applescript-and-octopress</id>
+    <content type="html"><![CDATA[<p>I’ve grown quite fond of TextExpander over the past year, but never more so than when I’m blogging with Octopress. Slowly I’ve built up an arsenal of snippets to make writing posts easier. Allow me to explain the thinking behind a few.</p>
+
+<p>If you’re impatient just head to the bottom of the article for download info. And if you’re uninterested in this blogging from blogging, I’ll see you at the next post.</p>
+
+<h3 id="rake-what-rake">Rake? What Rake?</h3>
+
+<p>The fastest way to start up a new post is to <code>cd</code> into your Octopress install in a Terminal and type <code>rake new_post["Post Title"]</code>. This generates a brand new <code>.markdown</code> file in your <code>/source/_posts/</code> directory with filled in YAML front matter. So with my sample rake just a few sentences back, we would get a new file called <code>2012-10-10-post-title.markdown</code> pre-populated with the following:</p>
+
+<h2 id="section">```</h2>
+<p>layout: post
+title: “Post Title”
+date: 2012-10-10 12:54
+comments: true
+categories: 
+—
+```</p>
+
+<p>I never really enjoyed having to go to the command line just to start a new post. Worse, I usually don’t know what I want to call a post, nor what the URL should be right away, but I like getting that YAML filled in nonetheless. Lucky for me, all I need to do is create a file in the <code>/source/_posts/</code> folder with the proper file naming convention and YAML filled in. Enter TextExpander.</p>
+
+<h3 id="editing-text-via-ftp">Editing Text via FTP</h3>
+
+<p>Quick sidebar here. Back in August, Gabe over at Macdrifter gave an excellent overview of <a href="http://www.macdrifter.com/2012/08/working-remotely-with-sublime-text-and-bbedit-ftp-access.html">how he edits text via FTP</a>. He provides detailed instructions to set up both Sublime Text 2 and BBEdit to work with text on an FTP server. I’ve tried both but prefer the latter, with one difference: I use <a href="http://www.textwrangler.com/products/textwrangler/">TextWrangler</a>.</p>
+
+<p>TextWrangler is probably the best bargain on the Mac inasmuch as it’s free. It’s essentially a stripped down version of BBEdit, but the features it’s missing hardly hamper it, if you ask me. For example, it still connects via FTP or SFTP to the server and directory of your choosing.</p>
+
+<p>Following Gabe’s instructions, I set up a path right to my <code>source/_posts</code> directory. Now, I can open from (⌘^O) or save to (⌘^S) my server right from the keyboard. Now all I need to do is properly format that YAML and URL.</p>
+
+<h3 id="a-simple-and-a-not-so-simple-yaml">A Simple and a Not-So-Simple YAML</h3>
+
+<p>Let me get this URL thingamajig out of the way. Here’s what the TextExpander snippet looks like:</p>
+
+<p><code>
+%Y-%m-%d-%|.markdown
+</code></p>
+
+<p>That gives you a file with today’s date and your cursor correctly placed so you can start typing the filename. Remember, all lowercase and no spaces. I use <code>uurl</code> to call this one when I’m saving a file.</p>
+
+<p>Now, as to the YAML front matter. I’ve got a basic one that I call with <code>yyaml</code>. You can dig into the snippet at the bottom to really see what’s going on, but basically it gives you a blank YAML with the time and date pre-populated and the cursor positioned to give the post a title.</p>
+
+<p>Most of my posts on the candler blog, however, are link posts. For those I have to add a line to my YAML for <code>external-url</code>. For that I now turn to an AppleScript snippet that fills in almost everything I need to post right away.</p>
+
+<p>The groundwork for this was <a href="http://canadian-fury.com/2012/09/06/applescript-and-friends-octopress-textexpander-and-ruby/">laid by Doug Stephen</a> with his snippet to strip out some oddities from a URL and create a new link blog type post from it. In his method he actually modified his rake task to create link posts when he entered a title with a specific format, but that’s all command line-y, so it’s no good for me. The brilliance in his work was actually stripping out the long, useless additions URLs, especially from RSS feeds, tend to have. All of that has been retained in my tweak here.</p>
+
+<p>So here’s the workflow I was looking for (and have actually achieved):</p>
+
+<ol>
+  <li>Find a cool story I want to link in Safari.</li>
+  <li>Select the text I plan to quote.</li>
+  <li>Fire up a blank TextWrangler document, type TextExpander snippet.</li>
+  <li>Editorialize as needed.</li>
+</ol>
+
+<p>The following AppleScript, when saved as a snippet, does all of that, though it’s not the snippet I prefer.</p>
+
+<p>```
+on replaceCommasInStringWithHTMLEntity(theTitle)
+	set rubyCommand to quote &amp; “puts “ &amp; “’” &amp; theTitle &amp; “’” &amp; “.gsub( /,/, ‘,’ )” &amp; quote
+	set strippedTitle to do shell script “ruby -e “ &amp; rubyCommand
+	return strippedTitle
+end replaceCommasInStringWithHTMLEntity</p>
+
+<p>on stripUTMFromURL(urlToStrip)
+	set rubyCommand to quote &amp; “puts “ &amp; “’” &amp; urlToStrip &amp; “’” &amp; “.gsub( /\?utm.*$/, ‘’ )” &amp; quote
+	set strippedURL to do shell script “ruby -e “ &amp; rubyCommand
+	return strippedURL
+end stripUTMFromURL</p>
+
+<p>tell application “Safari”
+	set pageTitle to name of document 1
+	set currentURL to URL of current tab of window 1
+	set selectedText to (do JavaScript “window.getSelection().toString()” in document 1)
+end tell</p>
+
+<p>set pageTitle to replaceCommasInStringWithHTMLEntity(pageTitle)
+set currentURL to stripUTMFromURL(currentURL)
+set theDate to current date</p>
+
+<p>return “—” &amp; “
+“ &amp; “layout: post” &amp; “
+“ &amp; “title: “ &amp; “"” &amp; pageTitle &amp; “"” &amp; “
+“ &amp; “date: “ &amp; (do shell script “date +%Y”) &amp; “-“ &amp; (do shell script “date +%m”) &amp; “-“ &amp; (do shell script “date +%d”) &amp; “ “ &amp; (do shell script “date +%H”) &amp; “:” &amp; (do shell script “date  +%M”) &amp; “
+“ &amp; “comments: true” &amp; “
+“ &amp; “categories: “ &amp; “
+“ &amp; “- “ &amp; “
+“ &amp; “external-url: “ &amp; currentURL &amp; “
+“ &amp; “—” &amp; “
+“ &amp; “
+“ &amp; “&gt; “ &amp; selectedText
+```</p>
+
+<p>It works excellently, as advertised. And thanks to Doug Stephen’s work cluttered URLs come across clean. My one gripe was that, since the whole snippet is an AppleScript, the cursor cannot be placed within the YAML text. But I found a workaround.</p>
+
+<h3 id="snippets-all-the-way-down">Snippets All the Way Down</h3>
+
+<p>Until just yesterday, I had no idea one could embed a TextExpander snippet inside a TextExpander snippet. Let me say that again: <strong>you can embed a TextExpander snippet inside a TextExpander</strong>. And as many times as you like. It’s as easy as adding putting in a snippet placeholder.</p>
+
+<p>With that in mind, I created separate snippets from the AppleScript above to get the page title, the URL and the selected text; three separate AppleScript snippets. Then I created my snippet for link post YAML front matter incorporating the snippets for title, URL and quoted text appropriately.</p>
+
+<p>The main advantage here is that users of other static blogging engines can incorporate the AppleScript to fit their YAML template. Additionally, it’s much easier to change the text output from within TextExpander than to modify the ray AppleScript.</p>
+
+<h3 id="download">Download</h3>
+
+<p>I’m using <a href="https://github.com/ttscoff/Brett-s-TextExpander-Snippets">Brett Terpstra’s nifty TextExpander tool</a> to help you make some sense of the snippets I’ve listed above. You can see them all laid out <a href="http://poritsky.com/te-snippets/">here</a>. Please note that I haven’t implemented Brett’s “prefix” system here, so the expansion abbreviations won’t change if you add commas as a prefix. I recommend downloading the snippets and adjusting their abbreviations as needed. Here’s <a href="http://poritsky.com/te-snippets/te-download.php?group=Octopress%20Snippets&amp;prefix=%2C%2C">the download link</a>.</p>
+
+<p>And that’s about it. Happy blogging.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

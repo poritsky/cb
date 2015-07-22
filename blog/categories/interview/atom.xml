@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Interview | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/interview/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[“I want the power to create what is in my mind. That's my dream.”]]></title>
+    <link href="http://www.candlerblog.com/2014/01/23/mcqueen-interviews-kanye/"/>
+    <updated>2014-01-23T20:09:00+00:00</updated>
+    <id>http://www.candlerblog.com/2014/01/23/mcqueen-interviews-kanye</id>
+    <content type="html"><![CDATA[<p><a href="http://www.interviewmagazine.com/music/kanye-west">Steve McQueen interviews Kanye West</a> for INTERVIEW Magazine and the result is just delightful. In response to how he makes beauty:</p>
+
+<blockquote>
+  <p>I just close my eyes and act like I’m a 3-year-old. [<em>laughs</em>] I try to get as close to a childlike level as possible because we were all artists back then. So you just close your eyes and think back to when you were as young as you can remember and had the least barriers to your creativity.</p>
+</blockquote>
+
+<p>On influence:</p>
+
+<blockquote>
+  <p>Well, influence isn’t my definition of success—it’s a by-product of my creativity. I just want to create more. I would be fine with making less money. I actually spend the majority of my money attempting to create more things. Not buying things or solidifying myself or trying to make my house bigger, or trying to show people how many Louis Vuitton bags I can get, or buying my way to a good seat at the table. My definition of success, again, is getting my ideas out there.</p>
+</blockquote>
+
+<p>And then there’s this side-project:</p>
+
+<blockquote>
+  <p>I also shot a film in “surround vision,” where I had seven screens—three in front of the audience, one above, one below, one to the left, one to the right. This is after designing <em>Watch the Throne</em>—and I was putting my money towards it. I put the amount of free income that I could put into it, which went into the millions. I went around and showed people what I’d done and said, “Hey, I made <em>Watch the Throne</em>, I made this amount of music for the past 10 years, I have this level of visuals, this level of communication, I can sell this many albums, and I also have these new inventions. Will anybody help me out?” I met with 30 billionaires, 30 companies, and basically everyone said, “Fuck you.”</p>
+</blockquote>
+
+<p>As Glenn Kenny aptly put it <a href="https://twitter.com/Glenn__Kenny/status/426058636503556098">on Twitter</a>, “Clearly the problem with most Kanye West interviews up until now has been the interviewer.” Case in point: <a href="http://youtu.be/pGAqqjXPQP8">Jimmy Kimmel</a>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Interview with Writer-Director Jonathan Lisecki]]></title>
+    <link href="http://www.candlerblog.com/2012/03/16/jonathan-lisecki-interview/"/>
+    <updated>2012-03-16T08:28:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/03/16/jonathan-lisecki-interview</id>
+    <content type="html"><![CDATA[<p>I interviewed <em>Gayby</em> writer and director Jonathan Lisecki for <a href="http://turnstylenews.com/2012/03/14/its-a-gayby-interview-with-writer-director-jonathan-lisecki-sxsw-film/">Turnstyle News</a>.</p>
+
+<blockquote>
+  <p>Lisecki, who also has a supporting role in the film, is, himself, quite a character. When I sat with him to discuss the film, he had an ear to ear grin most of the time and would cut off into fits of laughter whenever he knew he had a good quip for me. He talks a mile a minute and, as he told me, has an answer for everything. You can instantly tell he loves what he does as a filmmaker; he is having the time of his life here.</p>
+</blockquote>
+
+<p>This was one of my favorite screenings of SXSW, and talking to Jonathan was great fun. Hopefully <a href="http://www.gaybyfilm.com"><em>Gayby</em></a> will make the rounds. It has a lot of good laughs and is worth checking out.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Richard Ziade Answers Questions About Readability]]></title>
+    <link href="http://www.candlerblog.com/2012/03/06/richard-ziade-interview/"/>
+    <updated>2012-03-06T13:20:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/03/06/richard-ziade-interview</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2012/03/readability-ios.jpg" title="Readability" ></p>
+
+<p>Last week, after a long wait, Readability, the bookmarking and text-reformatting service, <a href="http://www.candlerblog.com/2012/03/01/readability/">finally launched on iOS</a>. Now that I have been using to for almost a week, I have a few more thoughts on how the app fits into my workflow, but more than anything I found myself with questions about the service itself.</p>
+
+<p>So I contacted Richard Ziade, founding partner of Readability, to pick his brain about the iOS launch and the company’s future plans. He was only too kind as he patiently answered my questions over email. Here is what he said.<!-- more --></p>
+
+<p><strong>How has launch week been going? Crazy around Readability HQ?</strong></p>
+
+<p>Things are going great. The response has been just tremendous so we’re very excited.</p>
+
+<p><strong>The Hoefler &amp; Frere-Jones fonts featured in the iOS app are absolutely gorgeous, particularly on the iPhone 4/S retina display. Can we be expecting them to come to the Web app anytime soon?</strong></p>
+
+<p>That’s more of an H+FJ question. I don’t want to steal the thunder of any announcement they may want to make. But yes - they do look amazing!</p>
+
+<p><strong>H+FJ has been dangling Web fonts for a while. After seeing <a href="http://kottke.org/12/03/kottkeorg-redesign-2012-version">Jason Kottke’s</a> redesign this week featuring the Whitney typeface, I imagine I’m not alone in wishing they’d make their way into Readability in a desktop web browser.</strong></p>
+
+<p>Agreed. They’re incredibly polished.</p>
+
+<p><strong>You’ve launched within other apps (Reeder, Pulse, etc.) but how different (perhaps necessary?) is it to have your own app on iOS?</strong></p>
+
+<p>It’s important because it helps with user adoption and gets the brand name out there, but make no mistake about it: we’re incredibly invested in the development community around Readability. If someone builds a better reading client than our own, we’ll be the first to stand and clap.</p>
+
+<p><strong>Apple files Readability under “News” in the App Store. I’m always confused as to what to call this kind of app, usually settling on the term “read later service.” What would you call it?</strong></p>
+
+<p>Most broadly I’d probably call it a “reading tool” or “reading platform.” The emphasis is on comfort and flexibility.</p>
+
+<p><strong>How has the web changed since the original Readability bookmarklet? Has there been backlash to stripping ads? Have publishers gotten better about making their sites more readable?</strong></p>
+
+<p>I think “backlash” is probably too strong. I think we did raise awareness about the importance of comfort around reading and that publishers are starting to pay more attention to it, which is a good thing.</p>
+
+<p><strong>Your subscription service pays sites that get bookmarked most in Readability, but, currently, there is no difference between a free and a subscription account? Why make the service and the app free?</strong></p>
+
+<p>We didn’t want to associate features or encumber usage with a tiered plan. We wanted to decouple the two.</p>
+
+<p><strong>What are the common reasons you have found that customers choose to go premium?</strong></p>
+
+<p>Mainly to support writers and publishers.</p>
+
+<p><strong>Your <a href="http://help.readability.com/customer/portal/articles/267033-what-does-premium-have-that-free-doesn’t-">support documents</a> state that “premium supports the costs to run the service, continued development” and paying publishers. If all of your customers go with a free account, how does Readability intend to make money?</strong></p>
+
+<p>We’re still navigating towards a plan in that respect. Right now, we just want to build a big and engaged community.</p>
+
+<p><strong>Would advertising be a potential revenue stream?</strong></p>
+
+<p>Potentially. Anything is on the table.</p>
+
+<p><strong>That’s perhaps a little ironic for a product known for stripping ads toward the end of making “the Web a more pleasant place to read.” Are you suggesting that advertising could be pleasant?</strong></p>
+
+<p>Of course advertising can be pleasant. Otherwise it wouldn’t have been around for two hundred years! I think if a balance is struck where the reading experience is respected then there are all sorts of possibilities. Also – relevance helps. I’m into tech. Show me tech stuff, not soda ads.</p>
+
+<p><strong>What should we be expecting from Readability through the rest of 2012? Anything you can share?</strong></p>
+
+<p>More integration into more apps, services and experiences. We are a platform first and we want to galvanize a community.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Smaller Is Better: New Models for the Indie Film Market]]></title>
+    <link href="http://www.candlerblog.com/2012/01/19/interview-in-turnstyle/"/>
+    <updated>2012-01-19T15:43:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/01/19/interview-in-turnstyle</id>
+    <content type="html"><![CDATA[<p><blockquote><p>“I just think audiences are getting tired of what is at the multiplex,” says Poritsky. “They’re tired of paying so much to see a lot of the same movies.”</p><footer><strong>Smaller Is Better: New Models for the Indie Film Market</strong> <cite><a href='http://turnstylenews.com/2012/01/19/smaller-is-better-new-models-for-the-indie-film-market/'>TurnStyle</a></cite></footer></blockquote></p>
+
+<p>A certain Noah J. Nelson interviewed me and a few other people about the state of indie cinema. Fun chat.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Are Americans Ready for The Infidel Sitcom?]]></title>
+    <link href="http://www.candlerblog.com/2011/10/24/are-americans-ready-for-the-infidel-sitcom/"/>
+    <updated>2011-10-24T19:21:24+00:00</updated>
+    <id>http://www.candlerblog.com/2011/10/24/are-americans-ready-for-the-infidel-sitcom</id>
+    <content type="html"><![CDATA[<p>Josef Adalian reports for New York Magazine’s <a href="http://nymag.com/daily
+/entertainment/2011/10/nbc_will_try_to_bridge_the_dif.html">Vulture</a>:</p>
+
+<blockquote>
+  <p>Are American TV viewers ready to flock to a network sitcom that explores
+questions of faith and ethnic identity, not to mention the often tense
+relationship between Muslims and Jews? …Vulture hears the Peacock is working
+with Avalon Television to develop a small-screen adaptation of last year’s
+British comedy film <em>The Infidel</em>, which had its U.S. debut at Tribeca and
+then played here largely via cable video on demand platforms.</p>
+</blockquote>
+
+<p>I got to see the comedy when it came to New York for the Tribeca Film
+Festival. Here’s what I had to <a href="http://heebmagazine.com/chosen-
+film-_the-infidel_/5496">say at Heeb</a>:</p>
+
+<blockquote>
+  <p>Comedy should be confrontational, and <em>The Infidel</em> crosses the line more
+than a few times. Still, the light style somehow keeps even touchy political
+and religious conflicts breezy. Like <em>Bend it Like Beckham</em>, the moral is “Be
+yourself, hey, but blend just a tad.” That wrap-up might be a little too
+simple for some, but without it the film would devolve into the same old
+arguments that both peoples have been warring over for millennia.</p>
+</blockquote>
+
+<p>The question as to whether or not American audiences are ready for a comedy
+about religious strife on television is a valid one. After all, <em>The Infidel</em>
+played in New York on the eve of the furor that was the <a href="http://en.wikipedia.org/wiki/Park51#Controversy">Park51/Cordoba House
+project in lower Manhattan</a>,
+one of the most volatile issues during the summer of 2010. During the
+festival, I had sit-down interviews with director Josh Appignanesi, writer
+David Baddiel and stars Omid Djalili and Richard Schiff.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> You can <a href="http://www.candlerblog.com/2010/04/29/candlercast-16-a
+-conversation-with-the-infidel-team/">listen
+to the full interview</a>, but I think some of the excerpts below
+shed some light on their approach to perceived controversy.</p>
+
+<p>involved](http://www.deadline.com/2011/10/nbc-developing-comedy-series-
+version-of-british-film-the-infidel-starring-omid-djalili/) in the development
+of the NBC project.</p>
+
+<p>I suggested to both Appignanesi and Baddiel that the film goes too far in
+terms of controversial imagery, specifically one scene in which Djalili
+appears in a concentration camp uniform. They had this to say:</p>
+
+<blockquote>
+  <p><strong>David Baddiel:</strong> If you actually deconstruct that particular gag, it’s not
+a guy who just appears in a concentration camp outfit and the audience laughs
+because he’s in a concentration camp outfit. It’s a Muslim who’s having a
+nightmare about the idea that he is Jewish. His subconscious, comically, is
+projecting himself as various Jewish monstrosities. To me, the one you’re
+going to end on there is that one.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Josh Appignanesi:</strong> What’s particularly funny about that is that the
+monstrous things that you might imagine Jews to be involve them being the
+worst victims of the twentieth century. There’s kind of quite an inverted joke
+if you look at it closely and it’s quite a subversive joke.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>DB:</strong> It’s also about an anxiety. When he goes to the computer and puts
+the word Jew [in a search engine] and gets a lod of hate back at him, that is
+real. Google had to change it because there was so much anti-semitism that
+came off the web. The point is with Mahmud it’s something that hasn’t really
+occurred to him. First he finds out that he’s Jewish and that’s a problem for
+his identity, then he has to deal with the fact that, if you’re Jewish, you
+will have anti-semitism to deal with.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>JA:</strong> And you’ll have the Holocaust as part of your history.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>DB:</strong> For me, with any joke, it’s not just like “Okay, you can’t make
+jokes about that thing.” I <em>never</em> think that. What I think is that you have
+to look at the individual joke and the context of that individual joke and
+say, “Okay; or not.” There’s still going to be people that think it’s not okay
+because they think some subjects are untouchable. All subjects are touchable
+within contextual grounds.</p>
+</blockquote>
+
+<p>I asked whether or not it had met much resistance in the UK.</p>
+
+<blockquote>
+  <p><strong>JA:</strong> People keep saying, “It’s controversial,” but then, actually, it’s
+not really clear where the controversy is. They sort of think it will be
+somewhere else but not for them. They might feel, “A bit edgy. That was maybe
+a bit close to the bone, but I don’t find it really problematic. I liked it.”
+Then who do they think will find it problematic? It usually ends up [they
+think] Muslims will find it problematic because they might kill you, because
+of Salman Rushdie, because of whatever. Because of South Park now<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>, because
+there are reactive parts of 1.1 billion people. There are a lot of Muslims out
+there, some of them are bound to be nutters.</p>
+</blockquote>
+
+<blockquote>
+  <p>In the UK we had some worries because [neither myself nor David] are Muslim.
+We had some Muslim people helping out on the film…producers, consultants for
+the script and stuff, but we didn’t know for sure and we were a little
+worried. They’ve embraced it more than anyone. That’s our big immigrant
+population is essentially Muslim or if not Muslim then “brown” people who get
+stopped at airports because of what’s been happening in the world and so
+identify with this character.</p>
+</blockquote>
+
+<p>had received a death threat](http://www.guardian.co.uk/tv-and-
+radio/2010/apr/22/south-park-censored-fatwa-muhammad) from an extremist Muslim
+Web site based out of New York.</p>
+
+<p>What became clear instantly is how seriously the creative team took this
+material. The reason the film feels “breezy” is because they didn’t just run
+with the same joke for the film’s duration. The idea of a Muslim man waking up
+to find he is a Jew could easily be both offensive and funny, but they didn’t
+create the film to push people’s buttons.</p>
+
+<p>But will it play on American television, especially after the film hardly
+played in the US? I think it can work, and Baddiel’s involvement in the
+project is certainly reassuring. However, it’s tough to forget how divided we
+are in this country on issues of religion. The Park51 incidents of 2010 and
+this year’s <a href="http://www.nytimes.com/2011/04/02/world/asia/02afg
+hanistan.html?pagewanted=all">Koran burning</a> by Florida pastor Terry Jones don’t bode well
+for an American public primed to comically approach its differences.</p>
+
+<p>I’ll bet that Jews and Muslims would be the least offended by the actual
+material if they saw it. More likely, as Appignanesi mentioned, it will be
+condemned on the grounds that the Muslims will blow us up for it. Thankfully,
+these guys realize that a powder-keg that big <em>must</em> be confronted. Why not in
+sitcom form?</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Right now, it appears [Baddiel and Djalili are<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Shortly before the film played in New York the [creators of South Park<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Videos | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/videos/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A Tribute To Alfred Hitchcock]]></title>
+    <link href="http://www.candlerblog.com/2013/06/14/hitchcock-titles/"/>
+    <updated>2013-06-14T19:55:00+00:00</updated>
+    <id>http://www.candlerblog.com/2013/06/14/hitchcock-titles</id>
+    <content type="html"><![CDATA[<p><div class="embed-video-container"><iframe src="http://player.vimeo.com/video/67871488 "></iframe></div></p>
+
+<p>At first I thought <em>Vertigo</em> was my favorite, but then I saw the <em>Dial M for Murder</em> title.</p>
+
+<p>Very cool stuff from <a href="https://vimeo.com/ghostlayer">Jean-Baptiste Lefournier</a>. Also: I couldn’t believe this was shot on a hacked <a href="http://panasonic.net/avc/lumix/systemcamera/gms/gh2/index.html">Panasonic GH2</a>.</p>
+
+<p>(via <a href="http://pbump.net/r68">Philip Bump</a>.)</p>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Posters | the candler blog]]></title>
+  <link href="http://www.candlerblog.com/blog/categories/posters/atom.xml" rel="self"/>
+  <link href="http://www.candlerblog.com/"/>
+  <updated>2015-07-20T19:14:52+00:00</updated>
+  <id>http://www.candlerblog.com/</id>
+  <author>
+    <name><![CDATA[Jonathan Poritsky]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Movies From An Alternate Universe]]></title>
+    <link href="http://www.candlerblog.com/2012/01/16/movies-from-an-alternate-universe/"/>
+    <updated>2012-01-16T12:03:00+00:00</updated>
+    <id>http://www.candlerblog.com/2012/01/16/movies-from-an-alternate-universe</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2012/01/alternate-avatar.jpg" title="Movies from an Alternate Universe on the Behance Network - Avatar" ></p>
+
+<p><a href="http://www.behance.net/gallery/Movies-From-An-Alternate-Universe/2783319">These posters</a> are amazing. Look at them closely, there’s lots of film nerdery going on there.</p>
+]]></content>
+  </entry>
+  
+</feed>
